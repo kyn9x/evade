@@ -101,7 +101,7 @@ namespace AdEvade.Draw
                 {
                     if (AdEvade.IsDodging)
                     {
-                        Drawing.DrawText(heroPos.X - dimension.Width / 2, heroPos.Y, Color.Red, "Evade: ON");
+                        Drawing.DrawText(heroPos.X - dimension.Width / 2, heroPos.Y, Color.Blue, "Evade: ON");
                     }
                     else
                     {
