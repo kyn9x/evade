@@ -42,12 +42,12 @@ namespace Evade
         public const int DiagonalEvadePointsCount = 7;
         public const int DiagonalEvadePointsStep = 20;
 
-        public const int CrossingTimeOffset = 250;
+        public const int CrossingTimeOffset = 50;
 
-        public const int EvadingFirstTimeOffset = 250;
-        public const int EvadingSecondTimeOffset = 80;
+        public const int EvadingFirstTimeOffset = 50;
+        public const int EvadingSecondTimeOffset = 0;
 
-        public const int EvadingRouteChangeTimeOffset = 250;
+        public const int EvadingRouteChangeTimeOffset = 50;
 
         public const int EvadePointChangeInterval = 2700;
         public static int LastEvadePointChangeT = 0;
