@@ -39,7 +39,7 @@ namespace Evade
         public const int PathFindingDistance = 60;
         public const int PathFindingDistance2 = 35;
 
-        public const int DiagonalEvadePointsCount = 1000;
+        public const int DiagonalEvadePointsCount = 2000;
         public const int DiagonalEvadePointsStep = 0;
 
         public const int CrossingTimeOffset = 0;
@@ -49,7 +49,7 @@ namespace Evade
 
         public const int EvadingRouteChangeTimeOffset = 0;
 
-        public const int EvadePointChangeInterval = 3000;
+        public const int EvadePointChangeInterval = 4000;
         public static int LastEvadePointChangeT = 0;
 
         public static Menu Menu, evadeSpells, skillShots, shielding, collision, drawings, misc;
