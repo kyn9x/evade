@@ -42,14 +42,14 @@ namespace Evade
         public const int DiagonalEvadePointsCount = 7;
         public const int DiagonalEvadePointsStep = 20;
 
-        public const int CrossingTimeOffset = 50;
+        public const int CrossingTimeOffset = 0;
 
-        public const int EvadingFirstTimeOffset = 50;
+        public const int EvadingFirstTimeOffset = 0;
         public const int EvadingSecondTimeOffset = 0;
 
-        public const int EvadingRouteChangeTimeOffset = 50;
+        public const int EvadingRouteChangeTimeOffset = 0;
 
-        public const int EvadePointChangeInterval = 2700;
+        public const int EvadePointChangeInterval = 3000;
         public static int LastEvadePointChangeT = 0;
 
         public static Menu Menu, evadeSpells, skillShots, shielding, collision, drawings, misc;
