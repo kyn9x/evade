@@ -35,19 +35,19 @@ namespace Evade
         public const int SkillShotsExtraRadius = 9;
         public const int SkillShotsExtraRange = 20;
         public const int GridSize = 10;
-        public const int ExtraEvadeDistance = 40;
-        public const int PathFindingDistance = 80;
-        public const int PathFindingDistance2 = 55;
+        public const int ExtraEvadeDistance = 20;
+        public const int PathFindingDistance = 60;
+        public const int PathFindingDistance2 = 35;
 
         public const int DiagonalEvadePointsCount = 7;
         public const int DiagonalEvadePointsStep = 20;
 
-        public const int CrossingTimeOffset = 170;
+        public const int CrossingTimeOffset = 100;
 
-        public const int EvadingFirstTimeOffset = 170;
+        public const int EvadingFirstTimeOffset = 100;
         public const int EvadingSecondTimeOffset = 0;
 
-        public const int EvadingRouteChangeTimeOffset = 170;
+        public const int EvadingRouteChangeTimeOffset = 100;
 
         public const int EvadePointChangeInterval = 300;
         public static int LastEvadePointChangeT = 0;
