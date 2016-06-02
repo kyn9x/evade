@@ -49,7 +49,7 @@ namespace Evade
 
         public const int EvadingRouteChangeTimeOffset = 0;
 
-        public const int EvadePointChangeInterval = 100;
+        public const int EvadePointChangeInterval = 500;
         public static int LastEvadePointChangeT = 0;
 
         public static Menu Menu, evadeSpells, skillShots, shielding, collision, drawings, misc;
