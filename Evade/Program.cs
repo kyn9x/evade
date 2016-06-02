@@ -145,7 +145,7 @@ namespace Evade
             //Initialze the collision
             Collision.Init();
 
-            Chat.Print("Evade By Kyn.xxxx", Color.White);
+            Chat.Print("Evade By Kyn.xxxx", Color.Red);
             Console.WriteLine("Evade:: Evade By Kyn.xxxx");
             
             if (Config.PrintSpellData)
