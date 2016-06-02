@@ -44,7 +44,7 @@ namespace Evade
                         SpellName = "TestSkillShot",
                         Slot = SpellSlot.R,
                         Type = SkillShotType.SkillshotCircle,
-                        Delay = 0,
+                        Delay = 600,
                         Range = 650,
                         Radius = 350,
                         MissileSpeed = int.MaxValue,
@@ -4208,14 +4208,13 @@ namespace Evade
                     Type = SkillShotType.SkillshotCircle,
                     Delay = 300,
                     Range = 900,
-                    Radius = 210,
+                    Radius = 250,
                     MissileSpeed = 2000,
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
                     IsDangerous = false,
                     MissileSpellName = "ZileanQMissile",
-                    CollisionObjects = new[] {CollisionObjectTypes.YasuoWall}
                 });
 
             #endregion Zilean
