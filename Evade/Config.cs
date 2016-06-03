@@ -39,8 +39,8 @@ namespace Evade
         public const int PathFindingDistance = 60;
         public const int PathFindingDistance2 = 35;
 
-        public const int DiagonalEvadePointsCount = 100;
-        public const int DiagonalEvadePointsStep = 0;
+        public const int DiagonalEvadePointsCount = 7;
+        public const int DiagonalEvadePointsStep = 20;
 
         public const int CrossingTimeOffset = 0;
 
