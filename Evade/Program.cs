@@ -145,10 +145,10 @@ namespace Evade
             //Initialze the collision
             Collision.Init();
 
-            Chat.Print("Evade By Kyn 
-                        If it is an error. please feedback to me", Color.Red);
-            Console.WriteLine("Evade:: Evade By Kyn
-                                       If it is an error. please feedback to me");
+            Chat.Print("Evade By Kyn", Color.Red);
+            Chat.Print("If it is an error. Please feedback to me", Color.Red);
+            Console.WriteLine("Evade:: Evade By Kyn");
+            Console.WriteLine("Evade:: If it is an error. Please feedback to me");
             
             if (Config.PrintSpellData)
             {
