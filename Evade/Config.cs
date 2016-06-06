@@ -36,8 +36,8 @@ namespace Evade
         public const int SkillShotsExtraRange = 20;
         public const int GridSize = 10;
         public const int ExtraEvadeDistance = 15;
-        public const int PathFindingDistance = 60;
-        public const int PathFindingDistance2 = 35;
+        public const int PathFindingDistance = 70;
+        public const int PathFindingDistance2 = 70;
 
         public const int DiagonalEvadePointsCount = 7;
         public const int DiagonalEvadePointsStep = 20;
@@ -49,7 +49,7 @@ namespace Evade
 
         public const int EvadingRouteChangeTimeOffset = 250;
 
-        public const int EvadePointChangeInterval = 7000;
+        public const int EvadePointChangeInterval = 8000;
         public static int LastEvadePointChangeT = 0;
 
         public static Menu Menu, evadeSpells, skillShots, shielding, collision, drawings, misc;
