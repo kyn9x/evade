@@ -366,9 +366,8 @@ namespace Evade
                     DangerValue = 2,
                     IsDangerous = false,
                     MissileSpellName = "AurelionSolQMissile",
-                    CanBeRemoved = true,
                     CollisionObjects =
-                        new[] { CollisionObjectTypes.YasuoWall }
+                        new[] { CollisionObjectTypes.YasuoWall },
                 });
 
             Spells.Add(
@@ -387,9 +386,8 @@ namespace Evade
                     DangerValue = 3,
                     IsDangerous = true,
                     MissileSpellName = "AurelionSolRBeamMissile",
-                    CanBeRemoved = true,
                     CollisionObjects =
-                        new[] { CollisionObjectTypes.YasuoWall }
+                        new[] { CollisionObjectTypes.YasuoWall },
                 });
 
             #endregion Aurelion Sol
