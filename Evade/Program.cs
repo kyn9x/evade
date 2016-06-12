@@ -146,7 +146,7 @@ namespace Evade
             Collision.Init();
 
             Chat.Print("Evade By Kyn", Color.Red);
-            Chat.Print("If it is an error. Please feedback to me", Color.Red);
+            Chat.Print("If it is an error. Please feedback to me", Color.Green);
             Console.WriteLine("Evade:: Evade By Kyn");
             Console.WriteLine("Evade:: If it is an error. Please feedback to me");
             
