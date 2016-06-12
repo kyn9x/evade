@@ -1375,7 +1375,7 @@ namespace Evade
                 var heropos = Drawing.WorldToScreen(ObjectManager.Player.Position);
                 if (Config.Menu["Enabled"].Cast<KeyBind>().CurrentValue)
                 {
-                    Drawing.DrawText(heropos.X, heropos.Y, Color.Red, "Evade: Testing");
+                    Drawing.DrawText(heropos.X, heropos.Y, Color.White, "Evadeee");
                 }
             }
 
