@@ -2408,7 +2408,6 @@ namespace Evade
                     ExtraDuration = 5500,
                     ToggleParticleName = "Lux_.+_E_tar_aoe_",
                     DontCross = true,
-                    CanBeRemoved = true,
                     DisabledByDefault = true,
                     CollisionObjects = new[] {CollisionObjectTypes.YasuoWall},
                 });
