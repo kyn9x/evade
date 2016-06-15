@@ -177,7 +177,7 @@ namespace Evade
                     SpellName = "Pulverize",
                     Slot = SpellSlot.Q,
                     Type = SkillShotType.SkillshotCircle,
-                    Delay = 0,
+                    Delay = 50,
                     Range = 365,
                     Radius = 365,
                     MissileSpeed = int.MaxValue,
