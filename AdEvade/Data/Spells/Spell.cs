@@ -227,6 +227,16 @@ namespace AdEvade.Data.Spells
             //spell.radius = spell.GetSpellRadius();
         }
 
+        if (spell.info.name == "TaliyahQ")
+        {
+            var taliyah = HeroManager.Enemies.FirstOrDefault(x => x.ChampionName == "Taliyah");
+            if (taliyah != null)
+            {
+                spell.currentSpellPosition = taliyah.ServerPosition.To2D();
+                spell.endPos = taliyah.ServerPosition.To2D() + spell.direction * spell.info.range;
+            }
+        }
+
         public static Vector2 GetCurrentSpellPosition(this Spell spell, bool allowNegative = false, float delay = 0,
             float extraDistance = 0)
         {
