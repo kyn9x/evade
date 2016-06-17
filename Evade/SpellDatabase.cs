@@ -318,7 +318,7 @@ namespace Evade
                     MissileSpellName = "VolleyAttack",
                     MultipleNumber = 9,
                     MultipleAngle = 4.62f*(float) Math.PI/180,
-                    //CanBeRemoved = true,
+                    CanBeRemoved = true,
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall, CollisionObjectTypes.Minion},
@@ -1939,7 +1939,7 @@ namespace Evade
                     IsDangerous = false,
                     MissileSpellName = "KhazixWMissile",
                     EarlyEvade = new[] {EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects},
-                    //CanBeRemoved = true,
+                    CanBeRemoved = true,
                     MultipleNumber = 3,
                     MultipleAngle = 22f*(float) Math.PI/180,
                     CollisionObjects =
@@ -2539,7 +2539,6 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "NautilusAnchorDragMissile",
                     EarlyEvade = new[] {EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects, EarlyObjects.Wall },
-                    //CanBeRemoved = true,
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -2736,7 +2735,6 @@ namespace Evade
                     IsDangerous = false,
                     MissileSpellName = "QuinnQMissile",
                     EarlyEvade = new[] {EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects},
-                    //CanBeRemoved = true,
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -2781,7 +2779,6 @@ namespace Evade
                     DangerValue = 3,
                     IsDangerous = true,
                     MissileSpellName = "PoppyRMissile",
-                    //CanBeRemoved = true,
                     CollisionObjects =
                         new[] { CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall },
                 });
@@ -2807,7 +2804,6 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "RengarEFinal",
                     EarlyEvade = new[] {EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects},
-                    //CanBeRemoved = true,
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -2885,7 +2881,6 @@ namespace Evade
                     IsDangerous = false,
                     MissileSpellName = "RumbleGrenade",
                     EarlyEvade = new[] {EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects},
-                    //CanBeRemoved = true,
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -2908,7 +2903,6 @@ namespace Evade
                     DangerValue = 4,
                     IsDangerous = false,
                     MissileSpellName = "RumbleCarpetBombMissile",
-                    //CanBeRemoved = false,
                     CollisionObjects = new CollisionObjectTypes[] {},
                 });
 
@@ -2933,7 +2927,6 @@ namespace Evade
                     IsDangerous = false,
                     MissileSpellName = "RyzeQ",
                     EarlyEvade = new[] {EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects},
-                    //CanBeRemoved = true,
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -2956,7 +2949,6 @@ namespace Evade
                     IsDangerous = false,
                     MissileSpellName = "ryzerq",
                     EarlyEvade = new[] {EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects},
-                    //CanBeRemoved = true,
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -3005,7 +2997,6 @@ namespace Evade
                     DangerValue = 3,
                     IsDangerous = true,
                     MissileSpellName = "sejuaniglacialprison",
-                    //CanBeRemoved = true,
                     CollisionObjects = new[] {CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall},
                 });
 
@@ -3443,7 +3434,6 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "tahmkenchqmissile",
                     EarlyEvade = new[] {EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects},
-                    //CanBeRemoved = true,
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Minion, CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall},
@@ -3626,7 +3616,6 @@ namespace Evade
                     IsDangerous = false,
                     MissileSpellName = "UrgotHeatseekingLineMissile",
                     EarlyEvade = new[] {EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects},
-                    //CanBeRemoved = true,
                 });
 
             Spells.Add(
@@ -3705,7 +3694,6 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "VarusRMissile",
                     EarlyEvade = new[] {EarlyObjects.Allies},
-                    //CanBeRemoved = true,
                     CollisionObjects = new[] {CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall},
                 });
 
@@ -3793,7 +3781,6 @@ namespace Evade
                     DangerValue = 2,
                     IsDangerous = false,
                     MissileSpellName = "VelkozQMissile",
-                    //CanBeRemoved = true,
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Minion, CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall},
@@ -3816,7 +3803,6 @@ namespace Evade
                     IsDangerous = false,
                     MissileSpellName = "VelkozQMissileSplit",
                     EarlyEvade = new[] {EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects},
-                    //CanBeRemoved = true,
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Minion, CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall},
@@ -4111,7 +4097,6 @@ namespace Evade
                     IsDangerous = false,
                     MissileSpellName = "ZiggsQSpell",
                     EarlyEvade = new[] {EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects},
-                    //CanBeRemoved = false,
                     DisableFowDetection = true,
                 });
 
@@ -4133,7 +4118,6 @@ namespace Evade
                     MissileSpellName = "ZiggsQSpell2",
                     ExtraMissileNames = new[] {"ZiggsQSpell2"},
                     EarlyEvade = new[] {EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects},
-                    //CanBeRemoved = false,
                     DisableFowDetection = true,
                 });
 
@@ -4155,7 +4139,6 @@ namespace Evade
                     MissileSpellName = "ZiggsQSpell3",
                     ExtraMissileNames = new[] {"ZiggsQSpell3"},
                     EarlyEvade = new[] {EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects},
-                    //CanBeRemoved = false,
                     DisableFowDetection = true,
                 });
 
