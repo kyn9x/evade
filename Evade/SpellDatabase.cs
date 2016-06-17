@@ -4251,15 +4251,17 @@ namespace Evade
                     SpellName = "ZileanQ",
                     Slot = SpellSlot.Q,
                     Type = SkillShotType.SkillshotCircle,
-                    Delay = 300,
+                    Delay = 250 + 450,
+                    ExtraDuration = 400,
                     Range = 900,
-                    Radius = 250,
-                    MissileSpeed = 2000,
+                    Radius = 140,
+                    MissileSpeed = int.MaxValue,
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
                     IsDangerous = false,
                     MissileSpellName = "ZileanQMissile",
+                    CollisionObjects = new[] {CollisionObjectTypes.YasuoWall},
                 });
 
             #endregion Zilean
