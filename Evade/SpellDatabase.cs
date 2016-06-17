@@ -213,7 +213,7 @@ namespace Evade
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
                 });
-
+                
             Spells.Add(
                 new SpellData
                 {
