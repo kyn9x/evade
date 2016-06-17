@@ -3557,7 +3557,7 @@ public static class SpellDatabase
                 ProjectileSpeed = 2000,
                 Radius = 140,
                 Range = 900,
-                SpellDelay = 250 + 450,
+                SpellDelay = 700,
                 SpellKey = SpellSlot.Q,
                 SpellName = "ZileanQ",
                 SpellType = SpellType.Circular,
