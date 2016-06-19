@@ -188,7 +188,7 @@ namespace Evade
             misc = Menu.AddSubMenu("Misc", "Misc");
             misc.AddStringList("BlockSpells", "Block spells while evading", new[] { "No", "Only dangerous", "Always" }, 1);
             //misc.Add("BlockSpells", "Block spells while evading").SetValue(new StringList(new []{"No", "Only dangerous", "Always"}, 1)));
-            misc.Add("DisableFow", new CheckBox("Disable fog of war dodging"));
+            misc.Add("DisableFow", new CheckBox("Disable fog of war dodging (Recommend: Untick)"));
             misc.Add("ShowEvadeStatus", new CheckBox("Show Evade Status"));
             if (ObjectManager.Player.BaseSkinName == "Olaf")
             {
