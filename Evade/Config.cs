@@ -123,8 +123,8 @@ namespace Evade
             }
 
             collision = Menu.AddSubMenu("Collision", "Collision");
-            collision.Add("MinionCollision", new CheckBox("Minion collision"));
-            collision.Add("HeroCollision", new CheckBox("Hero collision"));
+            collision.Add("MinionCollision", new CheckBox("Minion collision", false));
+            collision.Add("HeroCollision", new CheckBox("Hero collision", false));
             collision.Add("YasuoCollision", new CheckBox("Yasuo wall collision"));
             collision.Add("EnableCollision", new CheckBox("Enable"));
             //TODO add mode.
