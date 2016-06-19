@@ -188,7 +188,7 @@ namespace Evade
             //Check if the skillshot is already added.
             var alreadyAdded = false;
 
-            if (Config.misc["DisableFow"].Cast<CheckBox>().CurrentValue && !skillshot.Unit.IsVisible)
+            if (Config.misc["EnableFow"].Cast<CheckBox>().CurrentValue && !skillshot.Unit.IsVisible)
             {
                 return;
             }
