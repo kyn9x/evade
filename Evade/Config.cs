@@ -36,7 +36,7 @@ namespace Evade
         public const int SkillShotsExtraRange = 20;
         public const int GridSize = 10;
         public const int ExtraEvadeDistance = 15;
-        public const int PathFindingDistance = 180;
+        public const int PathFindingDistance = 80;
         public const int PathFindingDistance2 = 35;
 
         public const int DiagonalEvadePointsCount = 7;
@@ -126,7 +126,7 @@ namespace Evade
             collision.Add("MinionCollision", new CheckBox("Minion collision"));
             collision.Add("HeroCollision", new CheckBox("Hero collision"));
             collision.Add("YasuoCollision", new CheckBox("Yasuo wall collision"));
-            collision.Add("EnableCollision", new CheckBox("Enabled"));
+            collision.Add("EnableCollision", new CheckBox("Enable"));
             //TODO add mode.
 
             drawings = Menu.AddSubMenu("Drawings", "Drawings");

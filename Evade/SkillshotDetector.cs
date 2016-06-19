@@ -46,21 +46,6 @@ namespace Evade
             GameObject.OnCreate += ObjSpellMissileOnOnCreate;
             //GameObject.OnCreate += GameObject_OnCreate; //TODO: Detect lux R and other large skillshots.
             GameObject.OnDelete += GameObject_OnDelete;
-
-            if (Config.TestOnAllies && ObjectManager.Get<AIHeroClient>().Count() == 1)
-            {
-                Game.OnWndProc += Game_OnWndProc;
-            }
-        }
-
-        private static void Game_OnWndProc(WndEventArgs args)
-        {
-            if (args.Msg == (uint)WindowMessages.KeyUp)
-            {
-                TriggerOnDetectSkillshot(
-                    DetectionType.ProcessSpell, SpellDatabase.GetByName("TestSkillShot"), Utils.TickCount,
-                    Program.PlayerPosition, Game.CursorPos.To2D(), ObjectManager.Player);
-            }
         }
 
         private static void GameObject_OnCreate(GameObject sender, EventArgs args) { }
@@ -231,7 +216,7 @@ namespace Evade
         public static event OnDeleteMissileH OnDeleteMissile;
 
 
-        private static void TriggerOnDetectSkillshot(DetectionType detectionType,
+        internal static void TriggerOnDetectSkillshot(DetectionType detectionType,
             SpellData spellData,
             int startT,
             Vector2 start,
