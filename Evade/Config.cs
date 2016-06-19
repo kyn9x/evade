@@ -197,7 +197,7 @@ namespace Evade
 
             Menu.Add("Enabled", new KeyBind("Enabled", true, KeyBind.BindTypes.PressToggle, "K".ToCharArray()[0]));
 
-            Menu.Add("OnlyDangerous", new KeyBind("Dodge only dangerous", false, KeyBind.BindTypes.HoldActive, 16)); //*
+            Menu.Add("OnlyDangerous", new KeyBind("Dodge only dangerous", false, KeyBind.BindTypes.HoldActive, 106)); //*
         }
     }
 }
