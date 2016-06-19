@@ -820,7 +820,6 @@ namespace Evade
                         args.EndPos.Distance(args.StartPos));
                 }
                 
-                EvadeToPoint = args.EndPos;
                 //Utility.DelayAction.Add(args.Duration, delegate { Evading = false; });
             }
         }
