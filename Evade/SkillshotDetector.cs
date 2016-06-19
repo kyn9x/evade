@@ -44,12 +44,18 @@ namespace Evade
             //Detect when projectiles collide.
             GameObject.OnDelete += ObjSpellMissileOnOnDelete;
             GameObject.OnCreate += ObjSpellMissileOnOnCreate;
-            //GameObject.OnCreate += GameObject_OnCreate; //TODO: Detect lux R and other large skillshots.
+            GameObject.OnCreate += GameObject_OnCreate; //TODO: Detect lux R and other large skillshots.
             GameObject.OnDelete += GameObject_OnDelete;
         }
 
-        private static void GameObject_OnCreate(GameObject sender, EventArgs args) { }
-                
+        private static void GameObject_OnCreate(GameObject sender, EventArgs args)
+        {
+            /*if (ObjectManager.Player.Distance(sender.Position) < 1000)
+            {
+                Console.WriteLine(Utils.TickCount + " " + sender.Name + " " + sender.IsAlly + " " + sender.Type);
+            }*/
+        }
+
 
         private static void GameObject_OnDelete(GameObject sender, EventArgs args)
         {
