@@ -130,7 +130,56 @@ namespace Evade
             //TODO add mode.
 
             drawings = Menu.AddSubMenu("Đường kẻ", "Drawings");
-            
+            //EnabledColor = drawings.AddColor(new[] { "ECA", "ECR", "ECG", "ECB"}, "Enabled Spell Color", Color.White);
+            //DisabledColor = drawings.AddColor(new[] {"DCA", "DCR", "DCG", "DCB"}, "Disabled Spell Color", Color.Red);
+            //MissileColor = drawings.AddColor(new[] { "MCA", "MCR", "MCG", "MCB" }, "Missile Color", Color.Red);
+
+            drawings.AddLabel("Enabled Draw Color");
+            drawings.Add("EnabledDrawA", new Slider("A", 255, 1, 255));
+            drawings.Add("EnabledDrawR", new Slider("R", 255, 1, 255));
+            drawings.Add("EnabledDrawG", new Slider("G", 255, 1, 255));
+            drawings.Add("EnabledDrawB", new Slider("B", 255, 1, 255));
+
+            EnabledColor = Color.FromArgb(drawings["EnabledDrawA"].Cast<Slider>().CurrentValue,
+                drawings["EnabledDrawR"].Cast<Slider>().CurrentValue,
+                drawings["EnabledDrawG"].Cast<Slider>().CurrentValue,
+                drawings["EnabledDrawB"].Cast<Slider>().CurrentValue);
+
+            drawings.AddSeparator(5);
+
+            drawings.AddLabel("Disabled Draw Color");
+            drawings.Add("DisabledDrawA", new Slider("A", 255, 1, 255));
+            drawings.Add("DisabledDrawR", new Slider("R", 255, 1, 255));
+            drawings.Add("DisabledDrawG", new Slider("G", 255, 1, 255));
+            drawings.Add("DisabledDrawB", new Slider("B", 255, 1, 255));
+
+            DisabledColor = Color.FromArgb(drawings["DisabledDrawA"].Cast<Slider>().CurrentValue,
+                drawings["DisabledDrawR"].Cast<Slider>().CurrentValue,
+                drawings["DisabledDrawG"].Cast<Slider>().CurrentValue,
+                drawings["DisabledDrawB"].Cast<Slider>().CurrentValue);
+
+            drawings.AddSeparator(5);
+
+            drawings.AddLabel("Missile Draw Color");
+            drawings.Add("MissileDrawA", new Slider("A", 255, 1, 255));
+            drawings.Add("MissileDrawR", new Slider("R", 255, 1, 255));
+            drawings.Add("MissileDrawG", new Slider("G", 255, 1, 255));
+            drawings.Add("MissileDrawB", new Slider("B", 255, 1, 255));
+
+            MissileColor = Color.FromArgb(drawings["MissileDrawA"].Cast<Slider>().CurrentValue,
+                drawings["MissileDrawR"].Cast<Slider>().CurrentValue,
+                drawings["MissileDrawG"].Cast<Slider>().CurrentValue,
+                drawings["MissileDrawB"].Cast<Slider>().CurrentValue);
+
+            drawings.AddSeparator(5);
+
+            drawings.Add("EnabledDraw", new CheckBox("Draw Enabled"));
+            drawings.Add("DisabledDraw", new CheckBox("Draw Disabled"));
+            drawings.Add("MissileDraw", new CheckBox("Draw Missile"));
+
+            //drawings.AddItem(new MenuItem("EnabledColor", "Enabled spell color").SetValue(Color.White));
+            //drawings.AddItem(new MenuItem("DisabledColor", "Disabled spell color").SetValue(Color.Red));
+            //drawings.AddItem(new MenuItem("MissileColor", "Missile color").SetValue(Color.LimeGreen));
             drawings.Add("Border", new Slider("Độ dày đường kẻ kỹ năng", 2, 5, 1));
 
             drawings.Add("EnableDrawings", new CheckBox("Bật"));
