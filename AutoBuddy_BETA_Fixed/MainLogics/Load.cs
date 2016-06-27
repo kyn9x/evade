@@ -131,7 +131,7 @@ namespace AutoBuddy.MainLogics
                 SelectLane();
             }
             else
-                Core.DelayAction(CanSelectLane, 200);
+                Core.DelayAction(CanSelectLane, 500);
         }
 
         private void Chat_OnMessage(AIHeroClient sender, ChatMessageEventArgs args)
