@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using AutoBuddy.Humanizers;s
+using AutoBuddy.Humanizers;
 using AutoBuddy.Utilities;
 using EloBuddy;
 using EloBuddy.SDK;
