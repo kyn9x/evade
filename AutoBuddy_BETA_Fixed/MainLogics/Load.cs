@@ -15,7 +15,7 @@ namespace AutoBuddy.MainLogics
 {
     internal class Load
     {
-        private const float waitTime = 40;
+        private const float waitTime = 10;
         private readonly LogicSelector currentLogic;
         private readonly float startTime;
         private string status = " ";
