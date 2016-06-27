@@ -26,7 +26,6 @@ namespace AutoBuddy.MainLogics
         public Load(LogicSelector c)
         {
             currentLogic = c;
-            startTime = Game.Time + waitTime + RandGen.r.NextFloat(-10, 20);
             if (MainMenu.GetMenu("AB").Get<CheckBox>("debuginfo").CurrentValue)
                 Drawing.OnDraw += Drawing_OnDraw;
             if (!AutoWalker.p.Name.Equals("Challenjour Ryze"))
