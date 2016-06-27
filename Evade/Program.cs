@@ -138,7 +138,7 @@ namespace Evade
             Collision.Init();
 
             Chat.Print("Evade", Color.Red);
-            Chat.Print("Update: 21/06/2016", Color.Green);
+            Chat.Print("Update: 27/06/2016", Color.Green);
             Console.WriteLine("Evade:: Evade");
             Console.WriteLine("Evade::Update: 21/06/2016");
             
