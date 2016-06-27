@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using AutoBuddy.Humanizers;
+using AutoBuddy.Humanizers;s
 using AutoBuddy.Utilities;
 using EloBuddy;
 using EloBuddy.SDK;
@@ -131,7 +131,7 @@ namespace AutoBuddy.MainLogics
                 SelectLane();
             }
             else
-                Core.DelayAction(CanSelectLane, 500);
+                Core.DelayAction(CanSelectLane, 200);
         }
 
         private void Chat_OnMessage(AIHeroClient sender, ChatMessageEventArgs args)
