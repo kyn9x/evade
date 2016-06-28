@@ -139,7 +139,6 @@ namespace Evade
                     DangerValue = 2,
                     IsDangerous = false,
                     MissileSpellName = "AhriOrbMissile",
-                    ForceRemove = true,
                     CollisionObjects = new[] {CollisionObjectTypes.YasuoWall},
                 });
 
@@ -162,7 +161,6 @@ namespace Evade
                     DangerValue = 2,
                     IsDangerous = false,
                     MissileFollowsUnit = true,
-                    ForceRemove = true,
                     MissileSpellName = "AhriOrbReturn",
                     CollisionObjects = new[] {CollisionObjectTypes.YasuoWall},
                 });
