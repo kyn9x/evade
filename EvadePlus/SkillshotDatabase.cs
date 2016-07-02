@@ -3571,23 +3571,23 @@ namespace EvadePlus
                         MissileSpellName = "zyrapassivedeathmanager"
                     }
                 },
-                new CircularMissileSkillshot
-                {
-                    SpellData = new SpellData
-                    {
-                        DisplayName = "Rampant Growth",
-                        ChampionName = "Zyra",
-                        SpellName = "ZyraQFissure",
-                        Slot = SpellSlot.Q,
-                        Delay = 800,
-                        Range = 825,
-                        Radius = 260,
-                        MissileSpeed = 0,
-                        DangerValue = 2,
-                        IsDangerous = false,
-                        MissileSpellName = "ZyraQFissure"
-                    }
-                },
+                //new CircularMissileSkillshot
+                //{
+                //    SpellData = new SpellData
+                //    {
+                //        DisplayName = "Rampant Growth",
+                //        ChampionName = "Zyra",
+                //        SpellName = "ZyraQFissure",
+                //        Slot = SpellSlot.Q,
+                //        Delay = 800,
+                //        Range = 825,
+                //        Radius = 260,
+                //        MissileSpeed = 0,
+                //        DangerValue = 2,
+                //        IsDangerous = false,
+                //        MissileSpellName = "ZyraQFissure"
+                //    }
+                //},
                 new CircularMissileSkillshot
                 {
                     SpellData = new SpellData
