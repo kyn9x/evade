@@ -195,7 +195,7 @@ namespace Evade
                     SpellName = "Pulverize",
                     Slot = SpellSlot.Q,
                     Type = SkillShotType.SkillshotCircle,
-                    Delay = 50,
+                    Delay = 0,
                     Range = 365,
                     Radius = 365,
                     MissileSpeed = int.MaxValue,
@@ -638,7 +638,7 @@ namespace Evade
                     Type = SkillShotType.SkillshotCircle,
                     Delay = 750,
                     Range = 850,
-                    Radius = 150,
+                    Radius = 160,
                     MissileSpeed = int.MaxValue,
                     FixedRange = false,
                     AddHitbox = true,
@@ -663,6 +663,24 @@ namespace Evade
                     DangerValue = 5,
                     IsDangerous = true,
                     MissileSpellName = "CassiopeiaR",
+                });
+
+            Spells.Add(
+                new SpellData
+                {
+                    ChampionName = "Cassiopeia",
+                    SpellName = "CassiopeiaW",
+                    Slot = SpellSlot.W,
+                    Type = SkillShotType.SkillshotLine,
+                    Delay = 800,
+                    Range = 725,
+                    Radius = 170,
+                    MissileSpeed = int.MaxValue,
+                    FixedRange = false,
+                    AddHitbox = true,
+                    DangerValue = 3,
+                    IsDangerous = true,
+                    MissileSpellName = "CassiopeiaW",
                 });
 
             #endregion Cassiopeia
@@ -3481,7 +3499,7 @@ namespace Evade
 
             #endregion Tahm Kench
             
-                        #region Taric
+            #region Taric
 
             Spells.Add(
                 new SpellData

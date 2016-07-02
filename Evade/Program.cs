@@ -137,10 +137,10 @@ namespace Evade
             //Initialze the collision
             Collision.Init();
 
-            Chat.Print("Evade", Color.Red);
-            Chat.Print("Update: 28/06/2016", Color.Green);
-            Console.WriteLine("Evade:: Evade");
-            Console.WriteLine("Evade::Update: 28/06/2016");
+            Chat.Print("Evade: Add CassiopeiaW", Color.Red);
+            Chat.Print("Update: 02/07/2016", Color.Green);
+            Console.WriteLine("Evade:: Evade: Add CassiopeiaW");
+            Console.WriteLine("Evade::Update: 02/07/2016");
             
             if (Config.PrintSpellData)
             {
@@ -342,6 +342,17 @@ namespace Evade
                          DetectedSkillshots.Add(skillshotToAdd);
                          return;
                      }
+
+                    if (skillshot.SpellData.SpellName == "CassiopeiaW")
+                    {
+                        var start = skillshot.End - skillshot.Direction.Perpendicular() * 450;
+                        var end = skillshot.End + skillshot.Direction.Perpendicular() * 450;
+                        var skillshotToAdd = new Skillshot(
+                            skillshot.DetectionType, skillshot.SpellData, skillshot.StartTick, start, end,
+                            skillshot.Unit);
+                        DetectedSkillshots.Add(skillshotToAdd);
+                        return;
+                    }
 
                     if (skillshot.SpellData.SpellName == "DianaArc")
                     {
