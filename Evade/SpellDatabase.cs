@@ -707,6 +707,24 @@ namespace Evade
                     MissileSpellName = "Rupture",
                 });
 
+            Spells.Add(
+                new SpellData
+                {
+                    ChampionName = "Chogath",
+                    SpellName = "ChogathW",
+                    Slot = SpellSlot.W,
+                    Type = SkillShotType.SkillshotCone,
+                    Delay = 600,
+                    Range = 600,
+                    Radius = 60,
+                    MissileSpeed = int.MaxValue,
+                    FixedRange = false,
+                    AddHitbox = false,
+                    DangerValue = 3,
+                    IsDangerous = true,
+                    MissileSpellName = "ChogathW",
+                });
+
             #endregion Chogath
 
             #region Corki
@@ -1812,15 +1830,15 @@ namespace Evade
                     Slot = SpellSlot.E,
                     Type = SkillShotType.SkillshotLine,
                     Delay = 780,
-                    Range = 600,
-                    Radius = 125,
+                    Range = 500,
+                    Radius = 99,
                     MissileSpeed = int.MaxValue,
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 3,
                     IsDangerous = true,
                     MissileSpellName = "JinxE",
-                    ExtraDuration = 500,
+                    ExtraDuration = 1200,
                     DontCross = true,
                 });
 
