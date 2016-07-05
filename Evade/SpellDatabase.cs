@@ -672,8 +672,8 @@ namespace Evade
                     SpellName = "CassiopeiaW",
                     Slot = SpellSlot.W,
                     Type = SkillShotType.SkillshotLine,
-                    Delay = 800,
-                    Range = 725,
+                    Delay = 780,
+                    Range = 800,
                     Radius = 170,
                     MissileSpeed = int.MaxValue,
                     FixedRange = false,
@@ -681,6 +681,8 @@ namespace Evade
                     DangerValue = 3,
                     IsDangerous = true,
                     MissileSpellName = "CassiopeiaW",
+                    ExtraDuration = 3400,
+                    DontCross = true,
                 });
 
             #endregion Cassiopeia
@@ -1802,6 +1804,26 @@ namespace Evade
                     CollisionObjects = new[] {CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall},
                 });
 
+            Spells.Add(
+                new SpellData
+                {
+                    ChampionName = "Jinx",
+                    SpellName = "JinxE",
+                    Slot = SpellSlot.E,
+                    Type = SkillShotType.SkillshotLine,
+                    Delay = 780,
+                    Range = 600,
+                    Radius = 125,
+                    MissileSpeed = int.MaxValue,
+                    FixedRange = false,
+                    AddHitbox = true,
+                    DangerValue = 3,
+                    IsDangerous = true,
+                    MissileSpellName = "JinxE",
+                    ExtraDuration = 500,
+                    DontCross = true,
+                });
+
             #endregion Jinx
 
             #region Kalista
@@ -2512,7 +2534,7 @@ namespace Evade
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
                 });
-                
+
             #endregion Morgana
 
             #region Nami
@@ -4313,7 +4335,7 @@ namespace Evade
                     Type = SkillShotType.SkillshotMissileLine,
                     Delay = 250,
                     Range = 1150,
-                    Radius = 70,
+                    Radius = 77,
                     MissileSpeed = 1150,
                     FixedRange = true,
                     AddHitbox = true,
@@ -4327,20 +4349,20 @@ namespace Evade
                 new SpellData
                 {
                     ChampionName = "Zyra",
-                    SpellName = "zyrapassivedeathmanager",
-                    Slot = SpellSlot.E,
-                    Type = SkillShotType.SkillshotMissileLine,
+                    SpellName = "ZyraR",
+                    Slot = SpellSlot.R,
+                    Type = SkillShotType.SkillshotCircle,
                     Delay = 500,
-                    Range = 1474,
-                    Radius = 70,
-                    MissileSpeed = 2000,
-                    FixedRange = true,
+                    Range = 700,
+                    Radius = 525,
+                    MissileSpeed = int.MaxValue,
+                    FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 3,
                     IsDangerous = true,
-                    MissileSpellName = "zyrapassivedeathmanager",
-                    EarlyEvade = new[] {EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects},
-                    CollisionObjects = new[] {CollisionObjectTypes.YasuoWall},
+                    MissileSpellName = "ZyraR",
+                    ExtraDuration = 1400,
+                    DontCross = true,
                 });
 
             #endregion Zyra

@@ -137,10 +137,10 @@ namespace Evade
             //Initialze the collision
             Collision.Init();
 
-            Chat.Print("Evade: Add CassiopeiaW", Color.Red);
-            Chat.Print("Update: 02/07/2016", Color.Green);
-            Console.WriteLine("Evade:: Evade: Add CassiopeiaW");
-            Console.WriteLine("Evade::Update: 02/07/2016");
+            Chat.Print("Evade: Evade By Kyn: Fix ZyraStranglethorns", Color.Red);
+            Chat.Print("Update: 05/07/2016", Color.Green);
+            Console.WriteLine("Evade:: Evade: Evade By Kyn: Fix ZyraStranglethorns");
+            Console.WriteLine("Evade::Update: 05/07/2016");
             
             if (Config.PrintSpellData)
             {
@@ -344,6 +344,17 @@ namespace Evade
                      }
 
                     if (skillshot.SpellData.SpellName == "CassiopeiaW")
+                    {
+                        var start = skillshot.End - skillshot.Direction.Perpendicular() * 450;
+                        var end = skillshot.End + skillshot.Direction.Perpendicular() * 450;
+                        var skillshotToAdd = new Skillshot(
+                            skillshot.DetectionType, skillshot.SpellData, skillshot.StartTick, start, end,
+                            skillshot.Unit);
+                        DetectedSkillshots.Add(skillshotToAdd);
+                        return;
+                    }
+
+                    if (skillshot.SpellData.SpellName == "JinxE")
                     {
                         var start = skillshot.End - skillshot.Direction.Perpendicular() * 450;
                         var end = skillshot.End + skillshot.Direction.Perpendicular() * 450;
@@ -1438,7 +1449,7 @@ namespace Evade
                 var heropos = Drawing.WorldToScreen(ObjectManager.Player.Position);
                 if (Config.Menu["Enabled"].Cast<KeyBind>().CurrentValue)
                 {
-                    Drawing.DrawText(heropos.X, heropos.Y, Color.Blue, "EVADE#");
+                    Drawing.DrawText(heropos.X, heropos.Y, Color.Orange, "EVADE");
                 }
             }
 
