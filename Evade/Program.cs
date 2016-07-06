@@ -343,21 +343,10 @@ namespace Evade
                          return;
                      }
 
-                    if (skillshot.SpellData.SpellName == "CassiopeiaW")
-                    {
-                        var start = skillshot.End - skillshot.Direction.Perpendicular() * 450;
-                        var end = skillshot.End + skillshot.Direction.Perpendicular() * 450;
-                        var skillshotToAdd = new Skillshot(
-                            skillshot.DetectionType, skillshot.SpellData, skillshot.StartTick, start, end,
-                            skillshot.Unit);
-                        DetectedSkillshots.Add(skillshotToAdd);
-                        return;
-                    }
-
                     if (skillshot.SpellData.SpellName == "JinxE")
                     {
-                        var start = skillshot.End - skillshot.Direction.Perpendicular() * 450;
-                        var end = skillshot.End + skillshot.Direction.Perpendicular() * 450;
+                        var start = skillshot.End - skillshot.Direction.Perpendicular() * 650;
+                        var end = skillshot.End + skillshot.Direction.Perpendicular() * 650;
                         var skillshotToAdd = new Skillshot(
                             skillshot.DetectionType, skillshot.SpellData, skillshot.StartTick, start, end,
                             skillshot.Unit);

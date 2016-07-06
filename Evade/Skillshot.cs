@@ -39,6 +39,7 @@ namespace Evade
         SkillshotMissileCone,
         SkillshotRing,
         SkillshotArc,
+        SkillshotCrescent,
     }
 
     public enum DetectionType
@@ -95,6 +96,7 @@ namespace Evade
         public Geometry.Ring Ring;
         public Geometry.Arc Arc;
         public Geometry.Sector Sector;
+        
 
         public SpellData SpellData;
         public Vector2 Start;
