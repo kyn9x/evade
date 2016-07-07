@@ -1822,25 +1822,25 @@ namespace Evade
                     CollisionObjects = new[] {CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall},
                 });
 
-            Spells.Add(
-                new SpellData
-                {
-                    ChampionName = "Jinx",
-                    SpellName = "JinxE",
-                    Slot = SpellSlot.E,
-                    Type = SkillShotType.SkillshotLine,
-                    Delay = 780,
-                    Range = 350,
-                    Radius = 90,
-                    MissileSpeed = int.MaxValue,
-                    FixedRange = false,
-                    AddHitbox = true,
-                    DangerValue = 3,
-                    IsDangerous = true,
-                    MissileSpellName = "JinxE",
-                    ExtraDuration = 3400,
-                    DontCross = true,
-                });
+            //Spells.Add(
+            //    new SpellData
+            //    {
+            //        ChampionName = "Jinx",
+            //        SpellName = "JinxE",
+            //        Slot = SpellSlot.E,
+            //        Type = SkillShotType.SkillshotLine,
+            //        Delay = 780,
+            //        Range = 350,
+            //        Radius = 90,
+            //        MissileSpeed = int.MaxValue,
+            //        FixedRange = false,
+            //        AddHitbox = true,
+            //        DangerValue = 3,
+            //        IsDangerous = true,
+            //        MissileSpellName = "JinxE",
+            //        ExtraDuration = 3400,
+            //        DontCross = true,
+            //    });
 
             #endregion Jinx
 
@@ -2430,7 +2430,7 @@ namespace Evade
                     Type = SkillShotType.SkillshotMissileLine,
                     Delay = 250,
                     Range = 1300,
-                    Radius = 70,
+                    Radius = 80,
                     MissileSpeed = 1200,
                     FixedRange = true,
                     AddHitbox = true,
