@@ -462,7 +462,7 @@ namespace Evade
                     Delay = 250,
                     Range = 1100,
                     Radius = 70,
-                    MissileSpeed = 1800,
+                    MissileSpeed = 1875,
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 4,
@@ -1747,7 +1747,7 @@ namespace Evade
                     Type = SkillShotType.SkillshotMissileLine,
                     Delay = 750,
                     Range = 2550,
-                    Radius = 40,
+                    Radius = 60,
                     MissileSpeed = 5000,
                     FixedRange = true,
                     AddHitbox = true,
@@ -1768,7 +1768,7 @@ namespace Evade
                     Delay = 250,
                     Range = 3500,
                     Radius = 80,
-                    MissileSpeed = 5000,
+                    MissileSpeed = 5200,
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 3,
@@ -1792,7 +1792,7 @@ namespace Evade
                     Delay = 600,
                     Range = 1500,
                     Radius = 60,
-                    MissileSpeed = 3300,
+                    MissileSpeed = 3400,
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 3,
@@ -1829,8 +1829,8 @@ namespace Evade
             //        SpellName = "JinxE",
             //        Slot = SpellSlot.E,
             //        Type = SkillShotType.SkillshotLine,
-            //        Delay = 780,
-            //        Range = 350,
+            //        Delay = 785,
+            //        Range = 250,
             //        Radius = 90,
             //        MissileSpeed = int.MaxValue,
             //        FixedRange = false,
@@ -1838,7 +1838,7 @@ namespace Evade
             //        DangerValue = 3,
             //        IsDangerous = true,
             //        MissileSpellName = "JinxE",
-            //        ExtraDuration = 3400,
+            //        ExtraDuration = 4500,
             //        DontCross = true,
             //    });
 
@@ -2326,7 +2326,7 @@ namespace Evade
                     Type = SkillShotType.SkillshotLine,
                     Delay = 450,
                     Range = 1140,
-                    Radius = 65,
+                    Radius = 70,
                     MissileSpeed = int.MaxValue,
                     FixedRange = true,
                     AddHitbox = true,
@@ -2430,7 +2430,7 @@ namespace Evade
                     Type = SkillShotType.SkillshotMissileLine,
                     Delay = 250,
                     Range = 1300,
-                    Radius = 80,
+                    Radius = 70,
                     MissileSpeed = 1200,
                     FixedRange = true,
                     AddHitbox = true,
@@ -2551,6 +2551,27 @@ namespace Evade
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
+                });
+                
+                Spells.Add(
+                new SpellData
+                {
+                    ChampionName = "Morgana",
+                    SpellName = "MorganaW",
+                    Slot = SpellSlot.W,
+                    Type = SkillShotType.SkillshotCircle,
+                    Delay = 0,
+                    Range = 900,
+                    Radius = 275,
+                    MissileSpeed = int.MaxValue,
+                    FixedRange = false,
+                    AddHitbox = true,
+                    DangerValue = 2,
+                    IsDangerous = false,
+                    MissileSpellName = "TwitchVenomCaskMissile",
+                    CollisionObjects = new[] {CollisionObjectTypes.YasuoWall},
+                    ExtraDuration = 5500,
+                    DontCross = true,
                 });
 
             #endregion Morgana
@@ -3748,7 +3769,7 @@ namespace Evade
                     Delay = 0,
                     Range = 1800,
                     Radius = 75,
-                    MissileSpeed = 1900,
+                    MissileSpeed = 2000,
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
@@ -3773,6 +3794,8 @@ namespace Evade
                     DangerValue = 2,
                     IsDangerous = false,
                     MissileSpellName = "VarusE",
+                    ExtraDuration = 4400,
+                    DontCross = true,
                 });
 
             Spells.Add(
