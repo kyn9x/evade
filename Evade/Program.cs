@@ -137,10 +137,10 @@ namespace Evade
             //Initialze the collision
             Collision.Init();
 
-            Chat.Print("Evade: Evade By Kyn", Color.Red);
-            Chat.Print("Update: 06/07/2016", Color.Green);
+            Chat.Print("Evade By Kyn", Color.Red);
+            Chat.Print("Update 6.14: 14/07/2016", Color.Green);
             Console.WriteLine("Evade:: Evade By Kyn");
-            Console.WriteLine("Evade::Update: 06/07/2016");
+            Console.WriteLine("Evade::Update 6.14: 14/07/2016");
             
             if (Config.PrintSpellData)
             {
