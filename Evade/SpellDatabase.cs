@@ -4167,8 +4167,7 @@ namespace Evade
                     DangerValue = 2,
                     IsDangerous = false,
                     MissileSpellName = "ZiggsQSpell",
-                    EarlyEvade = new[] {EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects},
-                    DisableFowDetection = true,
+                    EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                 });
 
             Spells.Add(
@@ -4229,7 +4228,6 @@ namespace Evade
                     DangerValue = 2,
                     IsDangerous = false,
                     MissileSpellName = "ZiggsW",
-                    DisableFowDetection = true,
                     CollisionObjects = new[] {CollisionObjectTypes.YasuoWall},
                 });
 
