@@ -50,10 +50,21 @@ namespace Evade
 
         private static void GameObject_OnCreate(GameObject sender, EventArgs args)
         {
-            /*if (ObjectManager.Player.Distance(sender.Position) < 1000)
+            if (ObjectManager.Player.Distance(sender.Position) < 1000)
             {
                 Console.WriteLine(Utils.TickCount + " " + sender.Name + " " + sender.IsAlly + " " + sender.Type);
-            }*/
+            }
+            var spellData = SpellDatabase.GetBySourceObjectName(sender.Name);
+            
+            if (spellData == null)
+            {
+                return;
+            }
+            if (Config.Menu.Item("Enabled" + spellData.MenuItemName) == null)
+            {
+                return;
+            }
+            TriggerOnDetectSkillshot(DetectionType.ProcessSpell, spellData, Utils.TickCount - Game.Ping / 2, sender.Position.To2D(), sender.Position.To2D(), HeroManager.AllHeroes.MinOrDefault);
         }
 
 
