@@ -699,7 +699,7 @@ namespace Evade
 
                 if (Evading)
                 {
-                    var blockLevel = Config.misc["BlockSpells"].Cast<Slider>().CurrentValue;
+                    var blockLevel = Config.misc["BlockSpells"].Cast<ComboBox>().CurrentValue;
 
                     if (blockLevel == 0)
                     {
