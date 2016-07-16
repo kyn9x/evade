@@ -2076,6 +2076,8 @@ namespace Evade
                     AddHitbox = true,
                     DangerValue = 2,
                     IsDangerous = false,
+                    ExtraDuration = 4400,
+                    DontCross = true,
                     MissileSpellName = "KogMawVoidOozeMissile",
                     CollisionObjects = new[] {CollisionObjectTypes.YasuoWall},
                 });
@@ -4227,6 +4229,8 @@ namespace Evade
                     AddHitbox = true,
                     DangerValue = 2,
                     IsDangerous = false,
+                    ExtraDuration = 5500,
+                    DontCross = true,
                     MissileSpellName = "ZiggsW",
                     CollisionObjects = new[] {CollisionObjectTypes.YasuoWall},
                 });
@@ -4246,8 +4250,9 @@ namespace Evade
                     AddHitbox = true,
                     DangerValue = 2,
                     IsDangerous = false,
+                    ExtraDuration = 5600,
+                    DontCross = true,
                     MissileSpellName = "ZiggsE",
-                    DisableFowDetection = true,
                 });
 
             Spells.Add(
@@ -4257,16 +4262,17 @@ namespace Evade
                     SpellName = "ZiggsR",
                     Slot = SpellSlot.R,
                     Type = SkillShotType.SkillshotCircle,
-                    Delay = 0,
+                    Delay = 1500,
                     Range = 5300,
                     Radius = 500,
-                    MissileSpeed = int.MaxValue,
+                    MissileSpeed = 1500,
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
                     IsDangerous = false,
                     MissileSpellName = "ZiggsR",
-                    DisableFowDetection = true,
+                    ExtraDuration = 3300,
+                    DontCross = true,
                 });
 
             #endregion Ziggs
