@@ -132,21 +132,18 @@ namespace Evade
             //TODO add mode.
 
             drawings = Menu.AddSubMenu("Drawings", "Drawings");
-            //EnabledColor = drawings.AddColor(new[] { "ECA", "ECR", "ECG", "ECB"}, "Enabled Spell Color", Color.White);
-            //DisabledColor = drawings.AddColor(new[] {"DCA", "DCR", "DCG", "DCB"}, "Disabled Spell Color", Color.Red);
-            //MissileColor = drawings.AddColor(new[] { "MCA", "MCR", "MCG", "MCB" }, "Missile Color", Color.Red);
-
+            
             drawings.AddLabel("Enabled Draw Color = White");
             drawings.Add("EnabledDraw", new CheckBox("Draw Enabled"));
-            EnabledColor = Color.White
+            EnabledColor = Color.White;
 
             drawings.AddLabel("Disabled Draw Color = Red");
             drawings.Add("DisabledDraw", new CheckBox("Draw Disabled"));
-            DisabledColor = Color.Red
+            DisabledColor = Color.Red;
 
             drawings.AddLabel("Missile Draw Color= Green");
             drawings.Add("MissileDraw", new CheckBox("Draw Missile"));
-            MissileColor = Color.Green
+            MissileColor = Color.Green;
 
             
             
