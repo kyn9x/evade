@@ -60,10 +60,11 @@ namespace Evade
             {
                 return;
             }
-            if (Config.Menu.Item("Enabled" + spellData.MenuItemName) == null)
+            if (Config.skillShots["Enabled" + spellData.MenuItemName] == null)
             {
                 return;
             }
+            TriggerOnDetectSkillshot(DetectionType.ProcessSpell, spellData, Utils.TickCount - Game.Ping / 2, sender.Position.To2D(), sender.Position.To2D(), sender.Position.To2D(), HeroManager.AllHeroes.MinOrDefault);
         }
 
 
