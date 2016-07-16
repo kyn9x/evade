@@ -4364,6 +4364,25 @@ namespace Evade
 
             //Console.WriteLine("Added " + Spells.Count + " spells.");
         }
+        
+        public static SpellData GetBySourceObjectName(string objectName)
+        {
+            objectName = objectName.ToLowerInvariant();
+            foreach (var spellData in Spells)
+            {
+                if (spellData.SourceObjectName.Length == 0)
+                {
+                    continue;
+                }
+
+                if (objectName.Contains(spellData.SourceObjectName))
+                {
+                    return spellData;
+                }
+            }
+
+            return null;
+        }
 
         public static SpellData GetByName(string spellName)
         {
