@@ -48,24 +48,6 @@ namespace Evade
 
         private static bool _followPath = false;
 
-        public static bool FollowPath
-        {
-            get
-            {
-                return _followPath;
-            }
-
-            set
-            {
-                _followPath = value;
-                if (!_followPath)
-                {
-                    PathFollower.Stop();
-                }
-            }
-        }
-        public static bool Keepfollowing { get; set; }
-
         public static int LastWardJumpAttempt = 0;
 
         public static Vector2 PreviousTickPosition = new Vector2();
@@ -163,7 +145,9 @@ namespace Evade
             }
 
             if (Config.TestOnAllies)
-            {}
+            {
+                Benchmarking.Benchmark.Initialize();
+            }
         }
         private static void DetectedSkillshots_OnAdd(object sender, EventArgs e)
         {

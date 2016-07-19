@@ -57,6 +57,7 @@ namespace Evade
 
         public static void CreateMenu()
         {
+            #region Menu
             Menu = MainMenu.AddMenu("Evade", "evade");
             Menu.Add("Enabled", new KeyBind("Enabled", true, KeyBind.BindTypes.PressToggle, "K".ToCharArray()[0]));
             Menu.Add("OnlyDangerous", new KeyBind("Dodge only dangerous", false, KeyBind.BindTypes.HoldActive)); //
@@ -67,6 +68,10 @@ namespace Evade
                 Console.WriteLine("Evade:: LOAD FAILED");
                 throw new NullReferenceException("Menu NullReferenceException");
             }
+
+            #endregion Menu
+
+            #region Evade Spells
 
             //Create the evade spells submenus.
             evadeSpells = Menu.AddSubMenu("Evade spells", "evadeSpells");
@@ -91,6 +96,10 @@ namespace Evade
                 evadeSpells.Add("Enabled" + spell.Name, new CheckBox("Enabled"));
             }
 
+            #endregion Evade Spells
+
+            #region Skillshots
+
             //Create the skillshots submenus.
             skillShots = Menu.AddSubMenu("Skillshots", "Skillshots");
 
@@ -114,6 +123,10 @@ namespace Evade
                 }
             }
 
+            #endregion Skillshots
+
+            #region Shielding
+
             shielding = Menu.AddSubMenu("Ally shielding", "Shielding");
 
             foreach (var ally in ObjectManager.Get<AIHeroClient>())
@@ -123,6 +136,9 @@ namespace Evade
                     shielding.Add("shield" + ally.ChampionName, new CheckBox("Shield " + ally.ChampionName));
                 }
             }
+            #endregion Shielding
+
+            #region Collision
 
             collision = Menu.AddSubMenu("Collision", "Collision");
             collision.Add("MinionCollision", new CheckBox("Minion collision", false));
@@ -130,6 +146,10 @@ namespace Evade
             collision.Add("YasuoCollision", new CheckBox("Yasuo wall collision"));
             collision.Add("EnableCollision", new CheckBox("Enabled"));
             //TODO add mode.
+
+            #endregion Collision
+
+            #region Drawings
 
             drawings = Menu.AddSubMenu("Drawings", "Drawings");
             
@@ -145,10 +165,6 @@ namespace Evade
             drawings.Add("MissileDraw", new CheckBox("Draw Missile"));
             MissileColor = Color.Green;
 
-            
-            
-            
-
             //drawings.AddItem(new MenuItem("EnabledColor", "Enabled spell color").SetValue(Color.White));
             //drawings.AddItem(new MenuItem("DisabledColor", "Disabled spell color").SetValue(Color.Red));
             //drawings.AddItem(new MenuItem("MissileColor", "Missile color").SetValue(Color.LimeGreen));
@@ -156,7 +172,11 @@ namespace Evade
 
             drawings.Add("EnableDrawings", new CheckBox("Enabled"));
             drawings.Add("ShowEvadeStatus", new CheckBox("Draw Evade Status"));
-            
+
+            #endregion Drawings
+
+            #region Misc
+
             misc = Menu.AddSubMenu("Misc", "Misc");
             misc.Add("BlockSpells", new ComboBox("Block spells while evading", 2, "No", "Only dangerous", "Always"));
             //misc.Add("BlockSpells", "Block spells while evading").SetValue(new StringList(new []{"No", "Only dangerous", "Always"}, 1)));
@@ -166,6 +186,7 @@ namespace Evade
             {
                 misc.Add("DisableEvadeForOlafR", new CheckBox("Automatic disable Evade when Olaf's ulti is active!"));
             }
+            #endregion Misc
         }
     }
 }
