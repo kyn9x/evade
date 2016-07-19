@@ -211,7 +211,7 @@ namespace Evade
                     SpellName = "BandageToss",
                     Slot = SpellSlot.Q,
                     Type = SkillShotType.SkillshotMissileLine,
-                    Delay = 250,
+                    Delay = 245,
                     Range = 1100,
                     Radius = 90,
                     MissileSpeed = 2000,
@@ -461,7 +461,8 @@ namespace Evade
                     AddHitbox = true,
                     DangerValue = 4,
                     IsDangerous = true,
-                    MissileSpellName = "RocketGrabMissile",
+                    TakeClosestPath = true,
+                    MissileSpellName = "RocketGrab",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CollisionObjects =
                         new[]
