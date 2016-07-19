@@ -219,7 +219,8 @@ namespace Evade
                     AddHitbox = true,
                     DangerValue = 3,
                     IsDangerous = true,
-                    MissileSpellName = "BandageTossMissile",
+                    MissileSpellName = "BandageToss",
+                    TakeClosestPath = true,
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CollisionObjects =
                         new[]
@@ -895,6 +896,7 @@ namespace Evade
                     DangerValue = 3,
                     IsDangerous = false,
                     MissileSpellName = "InfectedCleaverMissileCast",
+                    TakeClosestPath = true,
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CollisionObjects =
                         new[]
