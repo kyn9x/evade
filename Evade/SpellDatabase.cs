@@ -453,9 +453,9 @@ namespace Evade
                     ChampionName = "Blitzcrank",
                     SpellName = "RocketGrab",
                     Slot = SpellSlot.Q,
-                    Type = SkillShotType.SkillshotMissileLine,
+                    Type = SkillShotType.SkillshotLine,
                     Delay = 250,
-                    Range = 1050,
+                    Range = 1100,
                     Radius = 70,
                     MissileSpeed = 1800,
                     FixedRange = true,
@@ -597,7 +597,7 @@ namespace Evade
                     DangerValue = 2,
                     IsDangerous = false,
                     MissileSpellName = "CaitlynPiltoverPeacemaker",
-                    CollisionObjects = new[] {CollisionObjectTypes.YasuoWall},
+                    CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
 
             Spells.Add(
