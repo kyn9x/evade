@@ -64,7 +64,7 @@ namespace Evade
                 }
             }
         }
- -        public static bool Keepfollowing { get; set; }
+        public static bool Keepfollowing { get; set; }
 
         public static int LastWardJumpAttempt = 0;
 
