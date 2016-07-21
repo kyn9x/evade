@@ -45,7 +45,7 @@ namespace MoonWalkEvade
 
             // Set up main menu
             MainMenu.AddGroupLabel("General Settings");
-            MainMenu.Add("evadeMode", new ComboBox("Evade Mode", 0, "Smooth - Moon Walk Style", "Fast - EvadePlus Style"));
+            MainMenu.Add("evadeMode", new ComboBox("Evade Mode", 1, "Smooth - Moon Walk Style", "Fast - EvadePlus Style"));
             MainMenu.AddSeparator();
 
             MainMenu.Add("fowDetection", new CheckBox("Enable FOW Detection"));
@@ -167,7 +167,7 @@ namespace MoonWalkEvade
             HotkeysMenu.Add("isProjectile", new CheckBox("Is Projectile?"));
 
             CollisionMenu = MainMenu.AddSubMenu("Collision");
-            CollisionMenu.Add("minion", new CheckBox("Attend Minion Collision"));
+            CollisionMenu.Add("minion", new CheckBox("Attend Minion Collision", false));
             CollisionMenu.Add("yasuoWall", new CheckBox("Attend Yasuo Wall"));
             CollisionMenu.Add("useProj", new CheckBox("Use Spell Projection", false));
         }
