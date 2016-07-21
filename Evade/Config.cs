@@ -36,7 +36,7 @@ namespace Evade
         public const int SkillShotsExtraRange = 20;
         public const int GridSize = 10;
         public const int ExtraEvadeDistance = 15;
-        public const int PathFindingDistance = 180;
+        public const int PathFindingDistance = 65;
         public const int PathFindingDistance2 = 35;
 
         public const int DiagonalEvadePointsCount = 7;
