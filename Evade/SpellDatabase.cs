@@ -886,7 +886,7 @@ namespace Evade
                     ChampionName = "DrMundo",
                     SpellName = "InfectedCleaverMissileCast",
                     Slot = SpellSlot.Q,
-                    Type = SkillShotType.SkillshotMissileLine,
+                    Type = SkillShotType.SkillshotLine,
                     Delay = 250,
                     Range = 1050,
                     Radius = 60,
@@ -1085,7 +1085,7 @@ namespace Evade
                     ChampionName = "Ezreal",
                     SpellName = "EzrealMysticShot",
                     Slot = SpellSlot.Q,
-                    Type = SkillShotType.SkillshotMissileLine,
+                    Type = SkillShotType.SkillshotLine,
                     Delay = 250,
                     Range = 1200,
                     Radius = 60,
@@ -1095,10 +1095,10 @@ namespace Evade
                     DangerValue = 2,
                     IsDangerous = false,
                     MissileSpellName = "EzrealMysticShotMissile",
-                    ExtraMissileNames = new[] {"EzrealMysticShotPulseMissile"},
+                    ExtraMissileNames = new[] { "EzrealMysticShotPulseMissile" },
                     CollisionObjects =
                         new[]
-                        {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
+                        { CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall },
                     Id = 229,
                 });
 
@@ -1108,7 +1108,7 @@ namespace Evade
                     ChampionName = "Ezreal",
                     SpellName = "EzrealEssenceFlux",
                     Slot = SpellSlot.W,
-                    Type = SkillShotType.SkillshotMissileLine,
+                    Type = SkillShotType.SkillshotLine,
                     Delay = 250,
                     Range = 1050,
                     Radius = 80,
@@ -1117,8 +1117,8 @@ namespace Evade
                     AddHitbox = true,
                     DangerValue = 2,
                     IsDangerous = false,
-                    MissileSpellName = "EzrealEssenceFluxMissile",
-                    CollisionObjects = new[] {CollisionObjectTypes.YasuoWall},
+                    MissileSpellName = "EzrealEssenceFlux",
+                    CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
 
             Spells.Add(
@@ -1127,7 +1127,7 @@ namespace Evade
                     ChampionName = "Ezreal",
                     SpellName = "EzrealTrueshotBarrage",
                     Slot = SpellSlot.R,
-                    Type = SkillShotType.SkillshotMissileLine,
+                    Type = SkillShotType.SkillshotLine,
                     Delay = 1000,
                     Range = 20000,
                     Radius = 160,
@@ -1137,7 +1137,7 @@ namespace Evade
                     DangerValue = 3,
                     IsDangerous = true,
                     MissileSpellName = "EzrealTrueshotBarrage",
-                    CollisionObjects = new[] {CollisionObjectTypes.YasuoWall},
+                    CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                     Id = 245,
                 });
 
@@ -1184,8 +1184,8 @@ namespace Evade
                     DangerValue = 5,
                     IsDangerous = true,
                     MissileSpellName = "FizzMarinerDoomMissile",
-                    EarlyEvade = new[] {EarlyObjects.Allies},
-                    CollisionObjects = new[] {CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall},
+                    EarlyEvade = new[] { EarlyObjects.Allies },
+                    CollisionObjects = new[] { CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall },
                 });
 
             #endregion Fizz
@@ -1208,7 +1208,7 @@ namespace Evade
                     DangerValue = 2,
                     IsDangerous = false,
                     MissileSpellName = "GalioResoluteSmite",
-                    EarlyEvade = new[] {EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects},
+                    EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                 });
 
             Spells.Add(
@@ -1271,8 +1271,8 @@ namespace Evade
                     DangerValue = 2,
                     IsDangerous = false,
                     ForceRemove = true,
-                    MissileSpellName = "gnarqmissile",
-                    CollisionObjects = new[] {CollisionObjectTypes.YasuoWall},
+                    MissileSpellName = "GnarQ",
+                    CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
 
             Spells.Add(
@@ -1294,10 +1294,10 @@ namespace Evade
                     DangerValue = 2,
                     IsDangerous = false,
                     ForceRemove = true,
-                    MissileSpellName = "GnarQMissileReturn",
+                    MissileSpellName = "GnarQReturn",
                     DisableFowDetection = false,
                     DisabledByDefault = true,
-                    CollisionObjects = new[] {CollisionObjectTypes.YasuoWall},
+                    CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
 
             Spells.Add(
