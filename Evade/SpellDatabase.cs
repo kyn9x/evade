@@ -210,7 +210,7 @@ namespace Evade
                     ChampionName = "Amumu",
                     SpellName = "BandageToss",
                     Slot = SpellSlot.Q,
-                    Type = SkillShotType.SkillshotMissileLine,
+                    Type = SkillShotType.SkillshotLine,
                     Delay = 245,
                     Range = 1100,
                     Radius = 90,
