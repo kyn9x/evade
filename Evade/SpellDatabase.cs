@@ -3975,7 +3975,7 @@ namespace Evade
                     ChampionName = "Viktor",
                     SpellName = "Laser",
                     Slot = SpellSlot.E,
-                    Type = SkillShotType.SkillshotMissileLine,
+                    Type = SkillShotType.SkillshotLine,
                     Delay = 250,
                     Range = 1500,
                     Radius = 80,
@@ -3984,9 +3984,10 @@ namespace Evade
                     AddHitbox = true,
                     DangerValue = 2,
                     IsDangerous = false,
+                    TakeClosestPath = true,
                     MissileSpellName = "ViktorDeathRayMissile",
-                    ExtraMissileNames = new[] {"viktoreaugmissile"},
-                    CollisionObjects = new[] {CollisionObjectTypes.YasuoWall},
+                    ExtraMissileNames = new[] { "viktoreaugmissile" },
+                    CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
 
             #endregion Viktor
@@ -4045,7 +4046,7 @@ namespace Evade
                     DangerValue = 2,
                     IsDangerous = true,
                     MissileSpellName = "XerathMageSpearMissile",
-                    CollisionObjects = new[] {CollisionObjectTypes.YasuoWall},
+                    CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
 
             Spells.Add(
@@ -4105,7 +4106,7 @@ namespace Evade
                     DangerValue = 3,
                     IsDangerous = true,
                     MissileSpellName = "yasuoq3w",
-                    CollisionObjects = new[] {CollisionObjectTypes.YasuoWall}
+                    CollisionObjects = new[] { CollisionObjectTypes.YasuoWall }
                 });
 
             Spells.Add(
@@ -4159,7 +4160,7 @@ namespace Evade
                     ChampionName = "Zed",
                     SpellName = "ZedQ",
                     Slot = SpellSlot.Q,
-                    Type = SkillShotType.SkillshotMissileLine,
+                    Type = SkillShotType.SkillshotLine,
                     Delay = 250,
                     Range = 925,
                     Radius = 50,
@@ -4352,7 +4353,7 @@ namespace Evade
                     ChampionName = "Zyra",
                     SpellName = "ZyraE",
                     Slot = SpellSlot.E,
-                    Type = SkillShotType.SkillshotMissileLine,
+                    Type = SkillShotType.SkillshotLine,
                     Delay = 250,
                     Range = 1150,
                     Radius = 77,
