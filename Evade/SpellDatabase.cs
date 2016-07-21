@@ -2555,7 +2555,7 @@ namespace Evade
                     ChampionName = "Morgana",
                     SpellName = "DarkBindingMissile",
                     Slot = SpellSlot.Q,
-                    Type = SkillShotType.SkillshotMissileLine,
+                    Type = SkillShotType.SkillshotLine,
                     Delay = 250,
                     Range = 1300,
                     Radius = 80,
