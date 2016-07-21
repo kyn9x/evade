@@ -3056,7 +3056,7 @@ namespace MoonWalkEvade.Skillshots
                         ChampionName = "Zyra",
                         SpellName = "ZyraE",
                         Slot = SpellSlot.E,
-                        Delay = 250,
+                        Delay = 450,
                         Range = 1150,
                         Radius = 90,
                         MissileSpeed = 1150,
