@@ -47,6 +47,24 @@ namespace Evade
         public static Vector2 EvadeToPoint = new Vector2();
 
         private static bool _followPath = false;
+        
+        public static bool FollowPath
+        {
+            get
+            {
+                return _followPath;
+            }
+
+            set
+            {
+                _followPath = value;
+                if (!_followPath)
+                {
+                    PathFollower.Stop();
+                }
+            }
+        }
+ -        public static bool Keepfollowing { get; set; }
 
         public static int LastWardJumpAttempt = 0;
 
