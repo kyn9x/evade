@@ -587,7 +587,7 @@ namespace Evade
                     ChampionName = "Caitlyn",
                     SpellName = "CaitlynPiltoverPeacemaker",
                     Slot = SpellSlot.Q,
-                    Type = SkillShotType.SkillshotMissileLine,
+                    Type = SkillShotType.SkillshotLine,
                     Delay = 625,
                     Range = 1300,
                     Radius = 90,
@@ -3310,7 +3310,7 @@ namespace Evade
                     ChampionName = "Sona",
                     SpellName = "SonaR",
                     Slot = SpellSlot.R,
-                    Type = SkillShotType.SkillshotMissileLine,
+                    Type = SkillShotType.SkillshotLine,
                     Delay = 250,
                     Range = 1000,
                     Radius = 140,
@@ -3320,7 +3320,7 @@ namespace Evade
                     DangerValue = 5,
                     IsDangerous = true,
                     MissileSpellName = "SonaR",
-                    CollisionObjects = new[] {CollisionObjectTypes.YasuoWall},
+                    CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
 
             #endregion Sona
