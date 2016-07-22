@@ -772,7 +772,7 @@ namespace Evade
                     ChampionName = "Corki",
                     SpellName = "MissileBarrage2",
                     Slot = SpellSlot.R,
-                    Type = SkillShotType.SkillshotMissileLine,
+                    Type = SkillShotType.SkillshotLine,
                     Delay = 200,
                     Range = 1500,
                     Radius = 40,
