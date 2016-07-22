@@ -1791,8 +1791,9 @@ namespace Evade
                     DangerValue = 3,
                     IsDangerous = true,
                     MissileSpellName = "JhinRShotMis",
+                    ExtraMissileNames = new[] { "JhinRShotMis4" },
                     CollisionObjects =
-                        new[] { CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall },
+                        new[] { CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall },
                 });
             #endregion Jhin
 
