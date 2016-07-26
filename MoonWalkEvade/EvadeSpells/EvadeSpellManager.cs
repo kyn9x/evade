@@ -107,7 +107,9 @@ namespace MoonWalkEvade.EvadeSpells
             }
 
             var evadePoint =
-                points.OrderByDescending(p => p.Distance(moonWalkEvade.LastIssueOrderPos) + p.Distance(center)).Last();
+                points.Where
+                (x => moonWalkEvade.IsPointSafe(x) && !Utils.Utils.IsWall(x)).OrderBy(x => x.Distance(Game.CursorPos)).
+                FirstOrDefault();
             return evadePoint;
         }
 
@@ -151,9 +153,10 @@ namespace MoonWalkEvade.EvadeSpells
                     speed += speed * evadeSpell.speedArray[Player.Instance.Spellbook.GetSpell(evadeSpell.Slot).Level - 1] / 100;
                     float maxTime = evadeResult.TimeAvailable - evadeSpell.Delay;
                     float maxTravelDist = speed * (maxTime / 1000);
+
                     var evadePoints = moonWalkEvadeInstance.GetEvadePoints(playerPos, maxTravelDist);
 
-                    var evadePoint = evadePoints.OrderBy(x => !x.IsUnderTurret()).ThenBy(p => p.Distance(playerPos)).FirstOrDefault();
+                    var evadePoint = evadePoints.OrderBy(x => !x.IsUnderTurret()).ThenBy(p => p.Distance(Game.CursorPos)).FirstOrDefault();
                     if (evadePoint != default(Vector2))
                     {
                         CastEvadeSpell(evadeSpell, evadeSpell.isItem ? Vector2.Zero : evadePoint);

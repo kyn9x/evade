@@ -11,6 +11,11 @@ namespace MoonWalkEvade.Utils
 {
     internal static class Utils
     {
+        public static bool IsZeroArray(this Vector2[] v)
+        {
+            return v.Length == 1 && v[0].IsZero;
+        }
+
         private static Random _random;
 
         public static Random Random

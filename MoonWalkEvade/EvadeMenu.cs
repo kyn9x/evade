@@ -32,7 +32,7 @@ namespace MoonWalkEvade
         public static Menu CollisionMenu { get; private set; }
 
         public static readonly Dictionary<string, EvadeSkillshot> MenuSkillshots = new Dictionary<string, EvadeSkillshot>();
-        public static readonly List<EvadeSpellData> MenuEvadeSpells = new List<EvadeSpellData>(); 
+        public static readonly List<EvadeSpellData> MenuEvadeSpells = new List<EvadeSpellData>();
 
         public static void CreateMenu()
         {
@@ -45,7 +45,7 @@ namespace MoonWalkEvade
 
             // Set up main menu
             MainMenu.AddGroupLabel("General Settings");
-            MainMenu.Add("evadeMode", new ComboBox("Evade Mode", 1, "Smooth - Moon Walk Style", "Fast - EvadePlus Style"));
+            MainMenu.Add("evadeMode", new ComboBox("Evade Mode", 0, "Smooth - Moon Walk Style", "Fast - EvadePlus Style"));
             MainMenu.AddSeparator();
 
             MainMenu.Add("fowDetection", new CheckBox("Enable FOW Detection"));
@@ -55,18 +55,10 @@ namespace MoonWalkEvade
             MainMenu.Add("moveToInitialPosition", new CheckBox("Move To Desired Position After Evade", false));
             MainMenu.AddSeparator();
 
-            MainMenu.Add("pathFindinding", new ComboBox("Path Finding Method", 1, "Alternative", "New"));
-            MainMenu.AddSeparator();
-
             MainMenu.Add("minComfortDist", new Slider("Minimum Comfort Distance To Enemies", 550, 0, 1000));
             MainMenu.AddLabel("If possible");
             MainMenu.AddSeparator(10);
             MainMenu.Add("ignoreComfort", new Slider("Ignore Comfort Distance For X Enemies", 1, 1, 5));
-            MainMenu.AddSeparator();
-            MainMenu.Add("serverTimeBuffer", new Slider("Server Time Buffer Delay", 80, 0, 200));
-            MainMenu.AddSeparator();
-            MainMenu.Add("crossingBuffer", new Slider("Crossing Buffer", 50, 0, 200));
-            MainMenu.AddLabel("Increase this to increase the crossing safety");
             MainMenu.AddSeparator();
 
             MainMenu.AddGroupLabel("Humanizer");
@@ -106,14 +98,14 @@ namespace MoonWalkEvade
                 SkillshotMenu.Add(skillshotString + "/draw", new CheckBox("Draw"));
 
                 var dangerous = new CheckBox("Dangerous", c.OwnSpellData.IsDangerous);
-                dangerous.OnValueChange += delegate(ValueBase<bool> sender, ValueBase<bool>.ValueChangeArgs args)
+                dangerous.OnValueChange += delegate (ValueBase<bool> sender, ValueBase<bool>.ValueChangeArgs args)
                 {
                     GetSkillshot(sender.SerializationId).OwnSpellData.IsDangerous = args.NewValue;
                 };
                 SkillshotMenu.Add(skillshotString + "/dangerous", dangerous);
 
                 var dangerValue = new Slider("Danger Value", c.OwnSpellData.DangerValue, 1, 5);
-                dangerValue.OnValueChange += delegate(ValueBase<int> sender, ValueBase<int>.ValueChangeArgs args)
+                dangerValue.OnValueChange += delegate (ValueBase<int> sender, ValueBase<int>.ValueChangeArgs args)
                 {
                     GetSkillshot(sender.SerializationId).OwnSpellData.DangerValue = args.NewValue;
                 };
@@ -140,7 +132,7 @@ namespace MoonWalkEvade
                 var dangerValueSlider = new Slider("Danger Value", e.DangerValue, 1, 5);
                 dangerValueSlider.OnValueChange += delegate (ValueBase<int> sender, ValueBase<int>.ValueChangeArgs args)
                 {
-                    MenuEvadeSpells.First(x => 
+                    MenuEvadeSpells.First(x =>
                         x.SpellName.Contains(sender.SerializationId.Split('/')[0])).DangerValue = args.NewValue;
                 };
                 SpellMenu.Add(evadeSpellString + "/dangervalue", dangerValueSlider);
@@ -151,8 +143,9 @@ namespace MoonWalkEvade
 
             DrawMenu = MainMenu.AddSubMenu("Drawings");
             DrawMenu.Add("disableAllDrawings", new CheckBox("Disable All Drawings", false));
-            DrawMenu.Add("drawEvadePoint", new CheckBox("Draw Evade Point", false));
+            DrawMenu.Add("drawEvadePoint", new CheckBox("Draw Evade Point"));
             DrawMenu.Add("drawEvadeStatus", new CheckBox("Draw Evade Status"));
+            DrawMenu.Add("drawSkillshots", new CheckBox("Draw Skillshots"));
             DrawMenu.Add("drawDangerPolygon", new CheckBox("Draw Danger Polygon"));
 
 
@@ -167,7 +160,7 @@ namespace MoonWalkEvade
             HotkeysMenu.Add("isProjectile", new CheckBox("Is Projectile?"));
 
             CollisionMenu = MainMenu.AddSubMenu("Collision");
-            CollisionMenu.Add("minion", new CheckBox("Attend Minion Collision", false));
+            CollisionMenu.Add("minion", new CheckBox("Attend Minion Collision"));
             CollisionMenu.Add("yasuoWall", new CheckBox("Attend Yasuo Wall"));
             CollisionMenu.Add("useProj", new CheckBox("Use Spell Projection", false));
         }

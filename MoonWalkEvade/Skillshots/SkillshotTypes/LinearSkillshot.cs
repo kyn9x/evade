@@ -169,6 +169,8 @@ namespace MoonWalkEvade.Skillshots.SkillshotTypes
                 LastCollisionPos = collision;
                 CollisionChecked = true;
             }
+            else if (DoesCollide && !LastCollisionPos.ProjectOn(StartPosition.To2D(), EndPosition.To2D()).IsOnSegment)
+                DoesCollide = false;
         }
 
         public override void OnDraw()

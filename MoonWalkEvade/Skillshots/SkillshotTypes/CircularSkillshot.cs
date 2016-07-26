@@ -135,11 +135,9 @@ namespace MoonWalkEvade.Skillshots.SkillshotTypes
             }
 
             if (Missile != null && !_missileDeleted)
-            {
                 new Geometry.Polygon.Circle(EndPosition,
                     StartPosition.To2D().Distance(Missile.Position.To2D()) / (StartPosition.To2D().Distance(EndPosition.To2D())) * OwnSpellData.Radius).DrawPolygon(
                         Color.DodgerBlue);
-            }
 
             ToPolygon().DrawPolygon(Color.White);
         }

@@ -292,7 +292,7 @@ namespace MoonWalkEvade.Skillshots
                         SpellName = "RocketGrab",
                         Slot = SpellSlot.Q,
                         Delay = 250,
-                        Range = 1100,
+                        Range = 1050,
                         Radius = 70,
                         MissileSpeed = 1800,
                         DangerValue = 4,
@@ -1758,7 +1758,7 @@ namespace MoonWalkEvade.Skillshots
                         MissileSpeed = 0,
                         DangerValue = 5,
                         IsDangerous = true,
-                        ObjectCreationName = "LuxMaliceCannon"
+                        ObjectCreationName = "LuxRVfxMis"
                     }
                 },
                 new LinearSkillshot
@@ -1851,7 +1851,7 @@ namespace MoonWalkEvade.Skillshots
                         ChampionName = "Nami",
                         SpellName = "NamiQ",
                         Slot = SpellSlot.Q,
-                        Delay = 950,
+                        Delay = 500,
                         Range = 875,
                         Radius = 200,
                         MissileSpeed = 0,
@@ -2968,36 +2968,36 @@ namespace MoonWalkEvade.Skillshots
                 //        ObjectCreationName = "ZedPBAOEDummy"
                 //    }
                 //},
-                //new CircularSkillshot
-                //{
-                //    OwnSpellData = new OwnSpellData
-                //    {
-                //        ChampionName = "Ziggs",
-                //        SpellName = "ZiggsE",
-                //        Slot = SpellSlot.E,
-                //        Delay = 250,
-                //        Range = 2000,
-                //        Radius = 235,
-                //        MissileSpeed = 3000,
-                //        DangerValue = 3,
-                //        ObjectCreationName = "ZiggsE"
-                //    }
-                //},
-                //new CircularSkillshot
-                //{
-                //    OwnSpellData = new OwnSpellData
-                //    {
-                //        ChampionName = "Ziggs",
-                //        SpellName = "ZiggsW",
-                //        Slot = SpellSlot.W,
-                //        Delay = 250,
-                //        Range = 2000,
-                //        Radius = 275,
-                //        MissileSpeed = 3000,
-                //        DangerValue = 3,
-                //        ObjectCreationName = "ZiggsW"
-                //    }
-                //},
+                new CircularSkillshot
+                {
+                    OwnSpellData = new SpellData
+                    {
+                        ChampionName = "Ziggs",
+                        SpellName = "ZiggsE",
+                        Slot = SpellSlot.E,
+                        Delay = 250,
+                        Range = 2000,
+                        Radius = 235,
+                        MissileSpeed = 3000,
+                        DangerValue = 3,
+                        ObjectCreationName = "ZiggsE"
+                    }
+                },
+                new CircularSkillshot
+                {
+                    OwnSpellData = new SpellData
+                    {
+                        ChampionName = "Ziggs",
+                        SpellName = "ZiggsW",
+                        Slot = SpellSlot.W,
+                        Delay = 250,
+                        Range = 2000,
+                        Radius = 275,
+                        MissileSpeed = 3000,
+                        DangerValue = 3,
+                        ObjectCreationName = "ZiggsW"
+                    }
+                },
                 new CircularSkillshot
                 {
                     OwnSpellData = new SpellData
@@ -3013,6 +3013,40 @@ namespace MoonWalkEvade.Skillshots
                         DangerValue = 2,
                         IsDangerous = false,
                         ObjectCreationName = "ZiggsQSpell"
+                    }
+                },
+                new CircularSkillshot
+                {
+                    OwnSpellData = new SpellData
+                    {
+                        DisplayName = "Bouncing Bomb 2",
+                        ChampionName = "Ziggs",
+                        SpellName = "ZiggsQ",
+                        Slot = SpellSlot.Q,
+                        Delay = 250,
+                        Range = 850,
+                        Radius = 150,
+                        MissileSpeed = 1700,
+                        DangerValue = 2,
+                        IsDangerous = false,
+                        ObjectCreationName = "ZiggsQSpell2"
+                    }
+                },
+                new CircularSkillshot
+                {
+                    OwnSpellData = new SpellData
+                    {
+                        DisplayName = "Bouncing Bomb 3",
+                        ChampionName = "Ziggs",
+                        SpellName = "ZiggsQ",
+                        Slot = SpellSlot.Q,
+                        Delay = 250,
+                        Range = 850,
+                        Radius = 150,
+                        MissileSpeed = 1700,
+                        DangerValue = 2,
+                        IsDangerous = false,
+                        ObjectCreationName = "ZiggsQSpell3"
                     }
                 },
                 new CircularSkillshot
@@ -3056,7 +3090,7 @@ namespace MoonWalkEvade.Skillshots
                         ChampionName = "Zyra",
                         SpellName = "ZyraE",
                         Slot = SpellSlot.E,
-                        Delay = 850,
+                        Delay = 250,
                         Range = 1150,
                         Radius = 90,
                         MissileSpeed = 1150,
@@ -3091,7 +3125,7 @@ namespace MoonWalkEvade.Skillshots
                         ChampionName = "Zyra",
                         SpellName = "ZyraBrambleZone",
                         Slot = SpellSlot.R,
-                        Delay = 1000,
+                        Delay = 500,
                         Range = 700,
                         Radius = 525,
                         MissileSpeed = 0,
