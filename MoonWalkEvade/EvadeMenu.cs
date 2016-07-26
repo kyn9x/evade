@@ -45,7 +45,7 @@ namespace MoonWalkEvade
 
             // Set up main menu
             MainMenu.AddGroupLabel("General Settings");
-            MainMenu.Add("evadeMode", new ComboBox("Evade Mode", 0, "Smooth - Moon Walk Style", "Fast - EvadePlus Style"));
+            MainMenu.Add("evadeMode", new ComboBox("Evade Mode", 1, "Smooth - Moon Walk Style", "Fast - EvadePlus Style"));
             MainMenu.AddSeparator();
 
             MainMenu.Add("fowDetection", new CheckBox("Enable FOW Detection"));
