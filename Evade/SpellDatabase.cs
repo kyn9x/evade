@@ -2670,7 +2670,7 @@ namespace Evade
                     ChampionName = "Nidalee",
                     SpellName = "JavelinToss",
                     Slot = SpellSlot.Q,
-                    Type = SkillShotType.SkillshotMissileLine,
+                    Type = SkillShotType.SkillshotLine,
                     Delay = 250,
                     Range = 1500,
                     Radius = 40,
