@@ -3849,7 +3849,7 @@ namespace Evade
                     Range = 700,
                     Radius = 80,
                     MissileSpeed = int.MaxValue,
-                    FixedRange = true,
+                    FixedRange = false,
                     AddHitbox = false,
                     DangerValue = 3,
                     IsDangerous = true,
