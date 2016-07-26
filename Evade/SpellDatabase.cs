@@ -3806,7 +3806,7 @@ namespace Evade
                     ChampionName = "Veigar",
                     SpellName = "VeigarBalefulStrike",
                     Slot = SpellSlot.Q,
-                    Type = SkillShotType.SkillshotMissileLine,
+                    Type = SkillShotType.SkillshotLine,
                     Delay = 250,
                     Range = 950,
                     Radius = 70,
