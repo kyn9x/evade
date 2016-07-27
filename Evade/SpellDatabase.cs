@@ -826,6 +826,7 @@ namespace Evade
                     AddHitbox = true,
                     DangerValue = 3,
                     IsDangerous = true,
+                    TakeClosestPath = true,
                     MissileSpellName = "DianaArcArc",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.AllyObjects },
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall }
@@ -2192,6 +2193,7 @@ namespace Evade
                     AddHitbox = true,
                     DangerValue = 3,
                     IsDangerous = true,
+                    TakeClosestPath = true,
                     MissileSpellName = "LeonaZenithBladeMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies },
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },

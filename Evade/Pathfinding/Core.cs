@@ -24,6 +24,8 @@ namespace Evade.Pathfinding
                 var innerPolygonList = new List<Geometry.Polygon>();
                 var outerPolygonList = new List<Geometry.Polygon>();
 
+                var takeClosestPath = false;
+
                 foreach (var skillshot in Program.DetectedSkillshots)
                 {
                     if (skillshot.Evade())
