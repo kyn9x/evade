@@ -24,8 +24,6 @@ namespace Evade.Pathfinding
                 var innerPolygonList = new List<Geometry.Polygon>();
                 var outerPolygonList = new List<Geometry.Polygon>();
 
-                var takeClosestPath = false;
-
                 foreach (var skillshot in Program.DetectedSkillshots)
                 {
                     if (skillshot.Evade())
@@ -69,7 +67,7 @@ namespace Evade.Pathfinding
                             {
                                 node = new Node(pol.Points[i]);
                             }
-                            
+
                             nodes.Add(node);
                             foreach (var polygon in outerPolygons)
                             {
@@ -117,7 +115,7 @@ namespace Evade.Pathfinding
             {
                 Console.WriteLine(ex.ToString());
             }
-            
+
             return result;
         }
 

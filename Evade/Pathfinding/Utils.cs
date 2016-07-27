@@ -47,7 +47,7 @@ namespace Evade.Pathfinding
                     }
                 }
             }
-            
+
 
             foreach (var polygon in polygons)
             {

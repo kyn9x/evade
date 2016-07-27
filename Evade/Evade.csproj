@@ -65,8 +65,8 @@
     <Compile Include="Config.cs" />
     <Compile Include="EvadeSpellData.cs" />
     <Compile Include="EvadeSpellDatabase.cs" />
-    <Compile Include="Geometry.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="Geometry.cs" />
     <Compile Include="Helpers.cs" />
     <Compile Include="Pathfinding\Core.cs" />
     <Compile Include="Pathfinding\Node.cs" />

@@ -84,7 +84,7 @@ namespace Evade
                 {
                     IsMoving = true,
                     CurrentPos = unit.ServerPosition.To2D(),
-                    PredictedPos = path.CutPath((int) d)[0],
+                    PredictedPos = path.CutPath((int)d)[0],
                 };
             }
             return new FastPredResult
@@ -151,7 +151,7 @@ namespace Evade
                             ObjectManager.Get<AIHeroClient>()
                                 .Where(
                                     h =>
-                                        (h.IsValidTarget(1200) && h.Team == ObjectManager.Player.Team && !h.IsMe ||
+                                        (h.IsValidTarget(1200, false) && h.Team == ObjectManager.Player.Team && !h.IsMe ||
                                          Config.TestOnAllies && h.Team != ObjectManager.Player.Team)))
                         {
                             var pred = FastPrediction(
