@@ -272,7 +272,8 @@ namespace Evade
                         return;
                     }
 
-                    if (skillshot.SpellData.SpellName == "TaricE") { }
+                    if (skillshot.SpellData.SpellName == "TaricE" && (skillshot.Unit as AIHeroClient).ChampionName == "Taric")
+                    { }
 
                     if (skillshot.SpellData.SpellName == "SyndraE" || skillshot.SpellData.SpellName == "syndrae5")
                     {

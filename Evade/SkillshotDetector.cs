@@ -50,17 +50,17 @@ namespace Evade
 
         private static void GameObject_OnCreate(GameObject sender, EventArgs args)
         {
-            if (ObjectManager.Player.Distance(sender.Position) < 1000)
+            /*if (ObjectManager.Player.Distance(sender.Position) < 1000)
             {
                 Console.WriteLine(Utils.TickCount + " " + sender.Name + " " + sender.IsAlly + " " + sender.Type);
-            }
+            }*/
             var spellData = SpellDatabase.GetBySourceObjectName(sender.Name);
             
             if (spellData == null)
             {
                 return;
             }
-            if (Config.skillShots["Enabled" + spellData.MenuItemName] == null)
+            if (Config.Menu["Enabled" + spellData.MenuItemName] == null)
             {
                 return;
             }
@@ -232,15 +232,15 @@ namespace Evade
         public static event OnDeleteMissileH OnDeleteMissile;
 
 
-        internal static void TriggerOnDetectSkillshot(DetectionType detectionType,
+        private static void TriggerOnDetectSkillshot(DetectionType detectionType,
             SpellData spellData,
             int startT,
             Vector2 start,
             Vector2 end,
-            
             Obj_AI_Base unit)
         {
             var skillshot = new Skillshot(detectionType, spellData, startT, start, end, unit);
+
 
             if (OnDetectSkillshot != null)
             {
