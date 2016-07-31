@@ -112,7 +112,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 3,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "AatroxEConeMissile",
                 });
 
@@ -137,7 +137,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "AhriOrbMissile",
                     CanBeRemoved = true,
                     ForceRemove = true,
@@ -161,7 +161,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileFollowsUnit = true,
                     CanBeRemoved = true,
                     ForceRemove = true,
@@ -280,7 +280,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = false,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "",
                 });
 
@@ -320,7 +320,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "VolleyAttack",
                     MultipleNumber = 9,
                     MultipleAngle = 4.62f * (float)Math.PI / 180,
@@ -369,7 +369,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "AurelionSolQMissile",
                     CanBeRemoved = true,
                     CollisionObjects =
@@ -436,7 +436,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "BardR",
                 });
 
@@ -481,7 +481,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = false,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "",
                 });
 
@@ -526,7 +526,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = false,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "",
                 });
 
@@ -594,7 +594,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "CaitlynPiltoverPeacemaker",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall }
                 });
@@ -613,7 +613,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 1,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "CaitlynEntrapmentMissile",
                     CanBeRemoved = true,
                     CollisionObjects =
@@ -639,7 +639,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "CassiopeiaQ",
                 });
 
@@ -679,7 +679,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 3,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "Rupture",
                 });
 
@@ -701,7 +701,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "PhosphorusBombMissile",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall }
                 });
@@ -720,7 +720,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "MissileBarrageMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CanBeRemoved = true,
@@ -743,7 +743,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "MissileBarrageMissile2",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CanBeRemoved = true,
@@ -770,7 +770,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 3,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "DariusCleave",
                     FollowCaster = true,
                     DisabledByDefault = true,
@@ -858,7 +858,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 3,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "InfectedCleaverMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CanBeRemoved = true,
@@ -950,7 +950,7 @@ namespace Evade
                     DisabledByDefault = false,
                     AddHitbox = false,
                     DangerValue = 3,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "EkkoW",
                     CanBeRemoved = true
                 });
@@ -969,7 +969,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 3,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "EkkoR",
                     CanBeRemoved = true,
                     FromObjects = new[] { "Ekko_Base_R_TrailEnd.troy" }
@@ -1042,7 +1042,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "EzrealMysticShotMissile",
                     ExtraMissileNames = new[] { "EzrealMysticShotPulseMissile" },
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
@@ -1067,7 +1067,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "EzrealEssenceFluxMissile",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
@@ -1110,7 +1110,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "FioraWMissile",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
@@ -1158,7 +1158,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "GalioResoluteSmite",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                 });
@@ -1177,7 +1177,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "GalioRighteousGust",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
@@ -1221,7 +1221,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     CanBeRemoved = true,
                     ForceRemove = true,
                     MissileSpellName = "gnarqmissile",
@@ -1245,7 +1245,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     CanBeRemoved = true,
                     ForceRemove = true,
                     MissileSpellName = "GnarQMissileReturn",
@@ -1268,7 +1268,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "GnarBigQMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
@@ -1288,7 +1288,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "GnarBigW",
                 });
 
@@ -1306,7 +1306,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "GnarE",
                 });
 
@@ -1324,7 +1324,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "GnarBigE",
                 });
 
@@ -1364,7 +1364,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "GragasQMissile",
                     ExtraDuration = 4500,
                     ToggleParticleName = "Gragas_.+_Q_(Enemy|Ally)",
@@ -1385,7 +1385,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "GragasE",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CanBeRemoved = true,
@@ -1430,7 +1430,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "GravesQLineMis",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
@@ -1474,7 +1474,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "HeimerdingerWAttack2",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
@@ -1493,7 +1493,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "heimerdingerespell",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
@@ -1576,7 +1576,7 @@ namespace Evade
                 FixedRange = true,
                 AddHitbox = true,
                 DangerValue = 2,
-                IsDangerous = false,
+                IsDangerous = true,
                 MissileSpellName = "IreliaTranscendentBlades",
                 CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
             });
@@ -1599,7 +1599,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "HowlingGaleSpell",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
@@ -1622,7 +1622,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 3,
-                    IsDangerous = false,
+                    IsDangerous = true,
                 });
 
             Spells.Add(
@@ -1656,7 +1656,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "JarvanIVDemacianStandard",
                 });
 
@@ -1678,7 +1678,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "JayceShockBlastMis",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CanBeRemoved = true,
@@ -1701,7 +1701,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "JayceShockBlastWallMis",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CanBeRemoved = true,
@@ -1826,7 +1826,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "kalistamysticshotmis",
                     ExtraMissileNames = new[] { "kalistamysticshotmistrue" },
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
@@ -1854,7 +1854,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "KarmaQMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CanBeRemoved = true,
@@ -1878,7 +1878,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "KarmaQMissileMantra",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CanBeRemoved = true,
@@ -1911,7 +1911,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "",
                 });
 
@@ -1933,7 +1933,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "RiftWalk",
                 });
 
@@ -1955,7 +1955,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "KennenShurikenHurlMissile1",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CanBeRemoved = true,
@@ -1983,7 +1983,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "KhazixWMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CanBeRemoved = true,
@@ -2008,7 +2008,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "KhazixE",
                 });
 
@@ -2030,7 +2030,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "KogMawQ",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CanBeRemoved = true,
@@ -2053,7 +2053,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "KogMawVoidOozeMissile",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
@@ -2072,7 +2072,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "KogMawLivingArtillery",
                 });
 
@@ -2094,7 +2094,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "LeblancSlide",
                 });
 
@@ -2112,7 +2112,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "LeblancSlideM",
                 });
 
@@ -2249,7 +2249,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "LissandraQMissile",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
@@ -2268,7 +2268,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "lissandraqshards",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
@@ -2287,7 +2287,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "LissandraEMissile",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
@@ -2310,7 +2310,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "LucianQ",
                 });
 
@@ -2328,7 +2328,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "lucianwmissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                 });
@@ -2347,7 +2347,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "lucianrmissileoffhand",
                     ExtraMissileNames = new[] { "lucianrmissile" },
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
@@ -2373,7 +2373,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "LuluQMissile",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
@@ -2392,7 +2392,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "LuluQMissileTwo",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
@@ -2437,7 +2437,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "LuxLightStrikeKugel",
                     ExtraDuration = 5500,
                     ToggleParticleName = "Lux_.+_E_tar_aoe_",
@@ -2505,7 +2505,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     DontCross = true,
                     MissileSpellName = "MalzaharQ",
                 });
@@ -2573,7 +2573,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "NamiRMissile",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
@@ -2622,7 +2622,7 @@ namespace Evade
                     Radius = 60,
                     MissileSpeed = 1400,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "NocturneDuskbringer",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall }
                 });
@@ -2673,7 +2673,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "olafaxethrow",
                     CanBeRemoved = true,
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall }
@@ -2694,10 +2694,10 @@ namespace Evade
                     Range = 1500,
                     Radius = 80,
                     MissileSpeed = 1200,
-                    FixedRange = false,
+                    FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "orianaizuna",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
@@ -2716,7 +2716,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
@@ -2735,7 +2735,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "OrianaDissonanceCommand-",
                     FromObject = "yomu_ring_",
                     SourceObjectName = "w_dissonance_ball" //Orianna_Base_W_Dissonance_ball_green.troy & Orianna_Base_W_Dissonance_cas_green.troy
@@ -2752,10 +2752,10 @@ namespace Evade
                     Range = 1500,
                     Radius = 85,
                     MissileSpeed = 1850,
-                    FixedRange = false,
+                    FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "orianaredact",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
@@ -2798,7 +2798,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "QuinnQ",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CanBeRemoved = true,
@@ -2825,7 +2825,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "PoppyQ",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                 });
@@ -2896,7 +2896,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 3,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "RekSaiQBurrowedMis",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CollisionObjects =
@@ -2947,7 +2947,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "RumbleGrenade",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CanBeRemoved = true,
@@ -2971,7 +2971,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 4,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "RumbleCarpetBombMissile",
                     CanBeRemoved = false,
                     CollisionObjects = new CollisionObjectTypes[] { },
@@ -2995,7 +2995,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "RyzeQ",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CanBeRemoved = true,
@@ -3113,7 +3113,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
@@ -3162,7 +3162,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "ShyvanaFireballMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CollisionObjects =
@@ -3203,7 +3203,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 3,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "ShyvanaFireballDragonFxMissile",
                     ExtraRange = 200,
                     MultipleNumber = 5,
@@ -3228,7 +3228,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "SivirQMissileReturn",
                     DisableFowDetection = false,
                     MissileFollowsUnit = true,
@@ -3249,7 +3249,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "SivirQMissile",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
@@ -3272,7 +3272,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "SkarnerFractureMissile",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
@@ -3340,7 +3340,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "SyndraQ",
                 });
 
@@ -3358,7 +3358,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "syndrawcast",
                 });
 
@@ -3376,7 +3376,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "syndrae5",
                     DisableFowDetection = true,
                 });
@@ -3395,7 +3395,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     DisableFowDetection = true,
                     MissileSpellName = "SyndraE",
                 });
@@ -3418,7 +3418,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "TaliyahQMis",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall, CollisionObjectTypes.Minion, CollisionObjectTypes.Champions },
                     DisabledByDefault = true,
@@ -3599,7 +3599,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "RocketJump",
                 });
 
@@ -3621,7 +3621,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "slashCast",
                 });
 
@@ -3643,7 +3643,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "SealFateMissile",
                     MultipleNumber = 3,
                     MultipleAngle = 28 * (float)Math.PI / 180,
@@ -3668,7 +3668,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "TwitchVenomCaskMissile",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
@@ -3691,7 +3691,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "UrgotHeatseekingLineMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CanBeRemoved = true,
@@ -3711,7 +3711,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "UrgotPlasmaGrenadeBoom",
                 });
 
@@ -3733,7 +3733,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "VarusQMissile",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
@@ -3752,7 +3752,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "VarusE",
                     ExtraDuration = 4400,
                     DontCross = true,
@@ -3797,7 +3797,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "VeigarBalefulStrikeMis",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
@@ -3817,7 +3817,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "",
                 });
 
@@ -3861,7 +3861,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "VelkozQMissile",
                     CanBeRemoved = true,
                     CollisionObjects =
@@ -3883,7 +3883,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "VelkozQMissileSplit",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CanBeRemoved = true,
@@ -3906,7 +3906,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "VelkozWMissile",
                 });
 
@@ -3924,7 +3924,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = false,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "VelkozEMissile",
                 });
 
@@ -3966,10 +3966,10 @@ namespace Evade
                     Range = 1500,
                     Radius = 80,
                     MissileSpeed = 1050,
-                    FixedRange = false,
+                    FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "ViktorDeathRayMissile",
                     ExtraMissileNames = new[] { "viktoreaugmissile" },
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
@@ -3993,7 +3993,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "xeratharcanopulse2",
                 });
 
@@ -4011,7 +4011,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "XerathArcaneBarrage2",
                 });
 
@@ -4135,7 +4135,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "ZacQ",
                 });
 
@@ -4157,7 +4157,7 @@ namespace Evade
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "ZedQMissile",
                     //FromObjects = new[] { "Zed_Clone_idle.troy", "Zed_Clone_Idle.troy" },
                     FromObjects = new[] { "Zed_Base_W_tar.troy", "Zed_Base_W_cloneswap_buf.troy" },
@@ -4182,7 +4182,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "ZiggsQSpell",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CanBeRemoved = false,
@@ -4203,7 +4203,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "ZiggsQSpell2",
                     ExtraMissileNames = new[] { "ZiggsQSpell2" },
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
@@ -4225,7 +4225,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "ZiggsQSpell3",
                     ExtraMissileNames = new[] { "ZiggsQSpell3" },
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
@@ -4247,7 +4247,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "ZiggsW",
                     DisableFowDetection = false,
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
@@ -4269,7 +4269,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "ZiggsE",
                     DisableFowDetection = false,
                     ExtraDuration = 5600,
@@ -4290,7 +4290,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "ZiggsR",
                     DisableFowDetection = false,
                     ExtraDuration = 3300,
@@ -4316,7 +4316,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "ZileanQMissile",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall }
                 });
@@ -4339,7 +4339,7 @@ namespace Evade
                     FixedRange = false,
                     AddHitbox = true,
                     DangerValue = 2,
-                    IsDangerous = false,
+                    IsDangerous = true,
                     MissileSpellName = "ZyraQ",
                 });
 
