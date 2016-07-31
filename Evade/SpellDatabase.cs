@@ -2670,7 +2670,7 @@ namespace Evade
                     ExtraRange = 150,
                     Radius = 105,
                     MissileSpeed = 1600,
-                    FixedRange = false,
+                    FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 2,
                     IsDangerous = false,
