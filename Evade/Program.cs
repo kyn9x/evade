@@ -138,9 +138,9 @@ namespace Evade
             Collision.Init();
 
             Chat.Print("Evade By Kyn", Color.Red);
-            Chat.Print("Update 6.15: 27/07/2016", Color.Green);
+            Chat.Print("Update 6.15: 31/07/2016", Color.Green);
             Console.WriteLine("Evade:: Evade By Kyn");
-            Console.WriteLine("Evade::Update 6.15: 27/07/2016");
+            Console.WriteLine("Evade::Update 6.15: 31/07/2016");
 
             if (Config.PrintSpellData)
             {
