@@ -160,7 +160,7 @@ namespace Moon_Walk_Evade.Skillshots
                         Delay = 250,
                         Range = 1100,
                         Radius = 80,
-                        MissileSpeed = 2000,
+                        MissileSpeed = 2075,
                         DangerValue = 3,
                         IsDangerous = true,
                         ObjectCreationName = "SadMummyBandageToss",
