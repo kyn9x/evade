@@ -202,7 +202,7 @@ namespace Evade
                     ChampionName = "Amumu",
                     SpellName = "BandageToss",
                     Slot = SpellSlot.Q,
-                    Type = SkillShotType.SkillshotLine,
+                    Type = SkillShotType.SkillshotMissileLine,
                     Delay = 250,
                     Range = 1100,
                     Radius = 90,
@@ -324,7 +324,7 @@ namespace Evade
                     MissileSpellName = "VolleyAttack",
                     MultipleNumber = 9,
                     MultipleAngle = 4.62f * (float)Math.PI / 180,
-                    
+                    DisabledByDefault = true,
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall, CollisionObjectTypes.Minion}
@@ -461,7 +461,6 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "RocketGrabMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall}
