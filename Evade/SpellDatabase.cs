@@ -163,7 +163,7 @@ namespace Evade
                     DangerValue = 2,
                     IsDangerous = true,
                     MissileFollowsUnit = true,
-                    CanBeRemoved = true,
+                    
                     ForceRemove = true,
                     MissileSpellName = "AhriOrbReturn",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall }
@@ -186,7 +186,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "AhriSeduceMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall}
@@ -213,7 +213,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "SadMummyBandageToss",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall}
@@ -258,7 +258,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "FlashFrostSpell",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall }
                 });
 
@@ -324,7 +324,7 @@ namespace Evade
                     MissileSpellName = "VolleyAttack",
                     MultipleNumber = 9,
                     MultipleAngle = 4.62f * (float)Math.PI / 180,
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall, CollisionObjectTypes.Minion}
@@ -347,7 +347,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "EnchantedCrystalArrow",
                     EarlyEvade = new[] { EarlyObjects.Allies },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects = new[] { CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall }
                 });
 
@@ -371,7 +371,7 @@ namespace Evade
                     DangerValue = 2,
                     IsDangerous = true,
                     MissileSpellName = "AurelionSolQMissile",
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[] { CollisionObjectTypes.YasuoWall }
                 });
@@ -392,7 +392,7 @@ namespace Evade
                     DangerValue = 3,
                     IsDangerous = true,
                     MissileSpellName = "AurelionSolRBeamMissile",
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[] { CollisionObjectTypes.YasuoWall }
                 });
@@ -418,7 +418,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "BardQMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects = new[] { CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall }
                 });
 
@@ -461,7 +461,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "RocketGrabMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall}
@@ -506,7 +506,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "BrandQMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall}
@@ -551,7 +551,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "BraumQMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall}
@@ -615,7 +615,7 @@ namespace Evade
                     DangerValue = 1,
                     IsDangerous = true,
                     MissileSpellName = "CaitlynEntrapmentMissile",
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall}
@@ -723,7 +723,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "MissileBarrageMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall}
@@ -746,7 +746,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "MissileBarrageMissile2",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall}
@@ -861,7 +861,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "InfectedCleaverMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall}
@@ -887,7 +887,7 @@ namespace Evade
                     DangerValue = 3,
                     IsDangerous = true,
                     MissileSpellName = "DravenDoubleShotMissile",
-                    CanBeRemoved = true,
+                    
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall }
                 });
 
@@ -930,7 +930,7 @@ namespace Evade
                     DangerValue = 4,
                     IsDangerous = true,
                     MissileSpellName = "ekkoqmis",
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[] { CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall }
                 });
@@ -971,7 +971,7 @@ namespace Evade
                     DangerValue = 3,
                     IsDangerous = true,
                     MissileSpellName = "EkkoR",
-                    CanBeRemoved = true,
+                    
                     FromObjects = new[] { "Ekko_Base_R_TrailEnd.troy" }
                 });
 
@@ -996,7 +996,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "EliseHumanE",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall}
@@ -1046,7 +1046,7 @@ namespace Evade
                     MissileSpellName = "EzrealMysticShotMissile",
                     ExtraMissileNames = new[] { "EzrealMysticShotPulseMissile" },
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -1137,7 +1137,7 @@ namespace Evade
                     MissileSpellName = "FizzMarinerDoomMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies },
                     CollisionObjects = new[] { CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall },
-                    CanBeRemoved = true,
+                    
                 });
 
             #endregion Fizz
@@ -1222,7 +1222,7 @@ namespace Evade
                     AddHitbox = true,
                     DangerValue = 2,
                     IsDangerous = true,
-                    CanBeRemoved = true,
+                    
                     ForceRemove = true,
                     MissileSpellName = "gnarqmissile",
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
@@ -1246,7 +1246,7 @@ namespace Evade
                     AddHitbox = true,
                     DangerValue = 2,
                     IsDangerous = true,
-                    CanBeRemoved = true,
+                    
                     ForceRemove = true,
                     MissileSpellName = "GnarQMissileReturn",
                     DisableFowDetection = false,
@@ -1388,7 +1388,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "GragasE",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     ExtraRange = 300,
                     CollisionObjects = new[] { CollisionObjectTypes.Champions, CollisionObjectTypes.Minion },
                 });
@@ -1681,7 +1681,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "JayceShockBlastMis",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -1704,7 +1704,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "JayceShockBlastWallMis",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -1731,7 +1731,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "JhinWMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[] { CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall },
                 });
@@ -1754,7 +1754,7 @@ namespace Evade
                     MissileSpellName = "JhinRShotMis",
                     ExtraMissileNames = new[] { "JhinRShotMis4" },
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[] { CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall },
                 });
@@ -1781,7 +1781,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "JinxWMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -1804,7 +1804,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "JinxR",
                     EarlyEvade = new[] { EarlyObjects.Allies },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects = new[] { CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall },
                 });
 
@@ -1830,7 +1830,7 @@ namespace Evade
                     MissileSpellName = "kalistamysticshotmis",
                     ExtraMissileNames = new[] { "kalistamysticshotmistrue" },
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -1857,7 +1857,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "KarmaQMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -1881,7 +1881,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "KarmaQMissileMantra",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -1958,7 +1958,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "KennenShurikenHurlMissile1",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -1986,7 +1986,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "KhazixWMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     MultipleNumber = 3,
                     MultipleAngle = 22f * (float)Math.PI / 180,
                     CollisionObjects =
@@ -2033,7 +2033,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "KogMawQ",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -2133,7 +2133,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "LeblancSoulShackle",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -2155,7 +2155,7 @@ namespace Evade
                     DangerValue = 3,
                     IsDangerous = true,
                     MissileSpellName = "LeblancSoulShackleM",
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -2182,7 +2182,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "BlindMonkQOne",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -2419,7 +2419,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "LuxLightBindingMis",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    //CanBeRemoved = true,
+                    //
                     //CollisionObjects = new[] { CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall, },
                 });
 
@@ -2442,7 +2442,7 @@ namespace Evade
                     ExtraDuration = 5500,
                     ToggleParticleName = "Lux_.+_E_tar_aoe_",
                     DontCross = true,
-                    CanBeRemoved = true,
+                    
                     DisabledByDefault = false,
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
@@ -2531,7 +2531,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "DarkBindingMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -2599,7 +2599,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "NautilusAnchorDragMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects, EarlyObjects.Wall },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -2648,7 +2648,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "JavelinToss",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -2675,7 +2675,7 @@ namespace Evade
                     DangerValue = 2,
                     IsDangerous = true,
                     MissileSpellName = "olafaxethrow",
-                    CanBeRemoved = true,
+                    
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall }
                 });
 
@@ -2801,7 +2801,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "QuinnQ",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -2846,7 +2846,7 @@ namespace Evade
                     DangerValue = 3,
                     IsDangerous = true,
                     MissileSpellName = "PoppyRMissile",
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[] { CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall },
                 });
@@ -2872,7 +2872,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "RengarEFinal",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -2950,7 +2950,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "RumbleGrenade",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -2998,7 +2998,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "RyzeQ",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
@@ -3047,7 +3047,7 @@ namespace Evade
                     DangerValue = 3,
                     IsDangerous = true,
                     MissileSpellName = "sejuaniglacialprison",
-                    CanBeRemoved = true,
+                    
                     CollisionObjects = new[] { CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall },
                 });
 
@@ -3507,7 +3507,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "tahmkenchqmissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Minion, CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall},
@@ -3556,7 +3556,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "ThreshQMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Minion, CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall},
@@ -3694,7 +3694,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "UrgotHeatseekingLineMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                 });
 
             Spells.Add(
@@ -3775,7 +3775,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "VarusRMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects = new[] { CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall },
                 });
 
@@ -3863,7 +3863,7 @@ namespace Evade
                     DangerValue = 2,
                     IsDangerous = true,
                     MissileSpellName = "VelkozQMissile",
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Minion, CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall},
@@ -3886,7 +3886,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "VelkozQMissileSplit",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Minion, CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall},
@@ -4032,7 +4032,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "XerathMageSpearMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    CanBeRemoved = true,
+                    
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Minion, CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall},
