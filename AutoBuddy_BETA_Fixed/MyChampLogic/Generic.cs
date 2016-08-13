@@ -18,7 +18,7 @@ namespace AutoBuddy.MyChampLogic
         {
             skillSequence = new[] {2, 1, 3, 2, 2, 4, 2, 1, 2, 1, 4, 1, 1, 3, 3, 4, 3, 3};
             ShopSequence =
-                "1027:Buy,3340:Buy,2003:StartHpPot,3070:Buy,1058:Buy,1011:Buy,3116:Buy,3020:Buy,1058:Buy,1026:Buy,3089:Buy,2003:StopHpPot,3136:Buy,3151:Buy,1058:Buy,3003:Buy,3108:Buy,3001:Buy";
+                "3340:Buy,1055:Buy,2003:StartHpPot,1038:Buy,3133:Buy,3508:Buy,3086:Buy,3087:Buy,3158:Buy,1038:Buy,3031:Buy,2003:StopHpPot,1038:Buy,3072:Buy,1055:Sell,3140:Buy,3139:Buy";
         }
 
         public int[] skillSequence { get; private set; }
