@@ -161,9 +161,9 @@ namespace Evade
             drawings.Add("DisabledDraw", new CheckBox("Draw Disabled"));
             DisabledColor = Color.Red;
 
-            drawings.AddLabel("Missile Draw Color= Green");
+            drawings.AddLabel("Missile Draw Color= White");
             drawings.Add("MissileDraw", new CheckBox("Draw Missile"));
-            MissileColor = Color.Green;
+            MissileColor = Color.White;
 
             //drawings.AddItem(new MenuItem("EnabledColor", "Enabled spell color").SetValue(Color.White));
             //drawings.AddItem(new MenuItem("DisabledColor", "Disabled spell color").SetValue(Color.Red));
