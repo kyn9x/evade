@@ -38,6 +38,10 @@
     <Reference Include="EloBuddy">
       <HintPath>..\..\..\..\..\Program Files (x86)\EloBuddy\System\EloBuddy.dll</HintPath>
     </Reference>
+    <Reference Include="EloBuddy.Sandbox, Version=1.0.6084.36269, Culture=neutral, PublicKeyToken=d671ef5d8e7e69a5, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\EloBuddy\System\EloBuddy.Sandbox.dll</HintPath>
+    </Reference>
     <Reference Include="EloBuddy.SDK">
       <HintPath>..\..\..\..\..\Program Files (x86)\EloBuddy\System\EloBuddy.SDK.dll</HintPath>
     </Reference>
@@ -49,6 +53,9 @@
     </Reference>
     <Reference Include="SharpDX.Direct3D9">
       <HintPath>..\..\..\..\..\Program Files (x86)\EloBuddy\System\SharpDX.Direct3D9.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.XInput">
+      <HintPath>..\..\..\..\Program Files (x86)\EloBuddy\System\SharpDX.XInput.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
