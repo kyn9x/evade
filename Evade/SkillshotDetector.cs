@@ -46,7 +46,15 @@ namespace Evade
             GameObject.OnCreate += ObjSpellMissileOnOnCreate;
             GameObject.OnCreate += GameObject_OnCreate; //TODO: Detect lux R and other large skillshots.
             GameObject.OnDelete += GameObject_OnDelete;
+
+            if (Config.TestOnAllies && ObjectManager.Get<AIHeroClient>().Count() == 1)
+            {
+                Game.OnWndProc += Game_OnWndProc;
+            }
         }
+        private static void Game_OnWndProc(WndEventArgs args)
+        { }
+
 
         private static void GameObject_OnCreate(GameObject sender, EventArgs args)
         {
@@ -55,12 +63,12 @@ namespace Evade
                 Console.WriteLine(Utils.TickCount + " " + sender.Name + " " + sender.IsAlly + " " + sender.Type);
             }*/
             var spellData = SpellDatabase.GetBySourceObjectName(sender.Name);
-            
+
             if (spellData == null)
             {
                 return;
             }
-            if (Config.Menu["Enabled" + spellData.MenuItemName] == null)
+            if (Config.skillShots["Enabled" + spellData.MenuItemName] == null)
             {
                 return;
             }
@@ -101,7 +109,7 @@ namespace Evade
             }
 
 
-        /* Console.WriteLine(
+            /*Console.WriteLine(
                 Utils.TickCount + " Projectile Created: " + missile.SData.Name + " distance: " +
                 missile.SData.CastRange + "Radius: " +
                 missile.SData.LineWidth + " Speed: " + missile.SData.MissileSpeed);  */
@@ -134,7 +142,7 @@ namespace Evade
             }
 
 
-            /*Console.WriteLine(
+            /* Console.WriteLine(
                     Utils.TickCount + " Projectile Created: " + missile.SData.Name + " distance: " +
                     missile.SData.CastRange + "Radius: " +
                     missile.SData.LineWidth + " Speed: " + missile.SData.MissileSpeed);  */

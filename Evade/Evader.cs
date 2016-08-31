@@ -38,7 +38,7 @@ namespace Evade
             bool isBlink = false,
             bool onlyGood = false)
         {
-            speed = speed == -1 ? (int) ObjectManager.Player.MoveSpeed : speed;
+            speed = speed == -1 ? (int)ObjectManager.Player.MoveSpeed : speed;
 
             var goodCandidates = new List<Vector2>();
             var badCandidates = new List<Vector2>();
@@ -183,7 +183,7 @@ namespace Evade
 
                         foreach (var ally in ObjectManager.Get<AIHeroClient>())
                         {
-                            if (ally.IsValidTarget(range) && !ally.IsMe && ally.IsAlly)
+                            if (ally.IsValidTarget(range, false) && !ally.IsMe && ally.IsAlly)
                             {
                                 allTargets.Add(ally);
                             }
@@ -201,7 +201,7 @@ namespace Evade
 
                         foreach (var gameObject in ObjectManager.Get<Obj_AI_Minion>())
                         {
-                            if (gameObject.Name.ToLower().Contains("ward") && gameObject.IsValidTarget(range) &&
+                            if (gameObject.Name.ToLower().Contains("ward") && gameObject.IsValidTarget(range, false) &&
                                 gameObject.Team == ObjectManager.Player.Team)
                             {
                                 allTargets.Add(gameObject);

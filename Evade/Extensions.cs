@@ -318,37 +318,6 @@ namespace Evade
                 sender.DisplayName = displayName + ": " + values[args.NewValue];
             };
         }
-
-        public static Color AddColor(this Menu m, string[] uniqueIds, string displayName, Color defaultValue)
-        {
-            m.AddGroupLabel(displayName);
-
-            string[] dp = new string[4];
-
-            dp[0] = "A:";
-            dp[1] = "R:";
-            dp[2] = "G:";
-            dp[3] = "B:";
-
-            int[] df = new int[4];
-
-            df[0] = defaultValue.A;
-            df[1] = defaultValue.R;
-            df[2] = defaultValue.G;
-            df[3] = defaultValue.B;
-
-            for (int x = -1; x <= 3; x++)
-            {
-                m.Add(uniqueIds[x], new Slider(dp[x], df[x], 1, 255));
-            }
-            var a = m[uniqueIds[0]].Cast<Slider>().CurrentValue;
-            var r = m[uniqueIds[1]].Cast<Slider>().CurrentValue;
-            var g = m[uniqueIds[2]].Cast<Slider>().CurrentValue;
-            var b = m[uniqueIds[3]].Cast<Slider>().CurrentValue;
-
-            Color color = Color.FromArgb(a, r, g, b);
-            return color;
-        }
     }
 
     static class Utility
