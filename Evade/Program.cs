@@ -553,7 +553,7 @@ namespace Evade
 
             if (Utility.PlayerWindingUp && !Orbwalker.IsAutoAttacking)
             {
-                Evading = false;
+                Evading = true;
                 return;
             }
 
