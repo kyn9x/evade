@@ -15,6 +15,22 @@ namespace Evade.Benchmarking
         private static Vector2 startPoint;
         private static Vector2 endPoint;
 
-        public static void Initialize() { }
+        public static void Initialize()
+        {
+            Game.OnWndProc += Game_OnWndProc;
+        }
+
+        private static void Game_OnWndProc(WndEventArgs args)
+        {
+            if (args.Msg == (uint)WindowMessages.LeftButtonDown)
+            {
+                startPoint = Game.CursorPos.To2D();
+            }
+
+            if (args.Msg == (uint)WindowMessages.LeftButtonUp)
+            {
+                endPoint = Game.CursorPos.To2D();
+            }
+        }
     }
 }

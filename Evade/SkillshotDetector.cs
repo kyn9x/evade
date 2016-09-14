@@ -47,13 +47,7 @@ namespace Evade
             GameObject.OnCreate += GameObject_OnCreate; //TODO: Detect lux R and other large skillshots.
             GameObject.OnDelete += GameObject_OnDelete;
 
-            if (Config.TestOnAllies && ObjectManager.Get<AIHeroClient>().Count() == 1)
-            {
-                Game.OnWndProc += Game_OnWndProc;
-            }
         }
-        private static void Game_OnWndProc(WndEventArgs args)
-        { }
 
 
         private static void GameObject_OnCreate(GameObject sender, EventArgs args)
@@ -223,10 +217,10 @@ namespace Evade
             Program.DetectedSkillshots.RemoveAll(
                 skillshot =>
                     (skillshot.SpellData.MissileSpellName.Equals(spellName, StringComparison.InvariantCultureIgnoreCase) ||
-                     skillshot.SpellData.ExtraMissileNames.Contains(spellName, StringComparer.InvariantCultureIgnoreCase)) &&
-                    (skillshot.Unit.NetworkId == caster.NetworkId &&
-                     ((missile.EndPosition.To2D() - missile.StartPosition.To2D()).AngleBetween(skillshot.Direction) < 10) &&
-                     skillshot.SpellData.CanBeRemoved || skillshot.SpellData.ForceRemove)); // 
+                      skillshot.SpellData.ExtraMissileNames.Contains(spellName, StringComparer.InvariantCultureIgnoreCase)) &&
+                      (skillshot.Unit.NetworkId == caster.NetworkId &&
+                       ((missile.EndPosition.To2D() - missile.StartPosition.To2D()).AngleBetween(skillshot.Direction) < 10) &&
+                       skillshot.SpellData.CanBeRemoved || skillshot.SpellData.ForceRemove)); //  
         }
 
         /// <summary>
@@ -240,7 +234,7 @@ namespace Evade
         public static event OnDeleteMissileH OnDeleteMissile;
 
 
-        private static void TriggerOnDetectSkillshot(DetectionType detectionType,
+        internal static void TriggerOnDetectSkillshot(DetectionType detectionType,
             SpellData spellData,
             int startT,
             Vector2 start,

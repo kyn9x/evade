@@ -58,7 +58,7 @@ namespace Evade
         public static void CreateMenu()
         {
             #region Menu
-            Menu = MainMenu.AddMenu("Evade", "evade");
+            Menu = MainMenu.AddMenu("Evade#", "evade");
             Menu.Add("Enabled", new KeyBind("Enabled", true, KeyBind.BindTypes.PressToggle));
             Menu.Add("OnlyDangerous", new KeyBind("Dodge only dangerous", false, KeyBind.BindTypes.HoldActive)); //
 
