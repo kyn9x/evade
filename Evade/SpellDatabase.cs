@@ -1827,6 +1827,26 @@ namespace Evade
                     CanBeRemoved = true,
                     CollisionObjects = new[] { CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall },
                 });
+                
+                Spells.Add(
+                new SpellData
+                {
+                    ChampionName = "Jinx",
+                    SpellName = "JinxE",
+                    Slot = SpellSlot.E,
+                    Type = SkillShotType.SkillshotLine,
+                    Delay = 350,
+                    Range = 850,
+                    Radius = 65,
+                    MissileSpeed = int.MaxValue,
+                    FixedRange = false,
+                    AddHitbox = true,
+                    DangerValue = 3,
+                    IsDangerous = false,
+                    MissileSpellName = "JinxEMissile",
+                    ExtraDuration = 5300,
+                    DontCross = true,
+                });
 
             #endregion Jinx
 
