@@ -661,6 +661,26 @@ namespace Evade
                     MissileSpellName = "CassiopeiaR",
                 });
 
+            Spells.Add(
+                new SpellData
+                {
+                    ChampionName = "Cassiopeia",
+                    SpellName = "CassiopeiaW",
+                    Slot = SpellSlot.W,
+                    Type = SkillShotType.SkillshotCircle,
+                    Delay = 350,
+                    Range = 1000,
+                    Radius = 170,
+                    MissileSpeed = int.MaxValue,
+                    FixedRange = false,
+                    AddHitbox = true,
+                    DangerValue = 3,
+                    IsDangerous = false,
+                    MissileSpellName = "CassiopeiaWMissile",
+                    ExtraDuration = 5200,
+                    DontCross = true,
+                });
+
             #endregion Cassiopeia
 
             #region Chogath
