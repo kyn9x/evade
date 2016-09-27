@@ -144,10 +144,8 @@ namespace Evade
             //Initialze the collision
             Collision.Init();
 
-            /*Chat.Print("Evade By Kyn", Color.Red);
-            Chat.Print("Update 6.17: 30/08/2016", Color.Green);
-            Console.WriteLine("Evade:: Evade By Kyn");
-            Console.WriteLine("Evade::Update 6.17: 30/08/2016");*/
+            Chat.Print("EVADE# LOADED", Color.White);
+            Console.WriteLine("Evade:: EVADE# LOADED");
 
             if (Config.PrintSpellData)
             {
@@ -564,7 +562,7 @@ namespace Evade
 
             if (Utility.PlayerWindingUp && !Orbwalker.IsAutoAttacking)
             {
-                Evading = false;
+                Evading = true;
                 return;
             }
 
