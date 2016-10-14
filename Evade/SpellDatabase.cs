@@ -1603,6 +1603,29 @@ namespace Evade
 
             #endregion Irelia
 
+            #region Ivern
+
+            Spells.Add(
+                new SpellData
+                {
+                    ChampionName = "Ivern",
+                    SpellName = "IvernQ",
+                    Slot = SpellSlot.Q,
+                    Type = SkillShotType.SkillshotMissileLine,
+                    Delay = 250,
+                    Range = 1100,
+                    Radius = 65,
+                    MissileSpeed = 1300,
+                    FixedRange = true,
+                    AddHitbox = true,
+                    DangerValue = 3,
+                    IsDangerous = true,
+                    MissileSpellName = "IvernQ",
+                    CollisionObjects = new[] { CollisionObjectTypes.YasuoWall, CollisionObjectTypes.Minion, CollisionObjectTypes.Champions,  },
+                });
+
+            #endregion Ivern
+                
             #region Janna
 
             Spells.Add(
@@ -1765,7 +1788,7 @@ namespace Evade
                     Type = SkillShotType.SkillshotMissileLine,
                     Delay = 250,
                     Range = 3500,
-                    Radius = 90,
+                    Radius = 80,
                     MissileSpeed = 5000,
                     FixedRange = true,
                     AddHitbox = true,
@@ -1773,7 +1796,7 @@ namespace Evade
                     IsDangerous = true,
                     MissileSpellName = "JhinRShotMis",
                     ExtraMissileNames = new[] { "JhinRShotMis4" },
-                    EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.AllyObjects },
+                    EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CanBeRemoved = true,
                     CollisionObjects =
                         new[] { CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall },
@@ -2550,7 +2573,6 @@ namespace Evade
                     ExtraDuration = 5500,
                     ToggleParticleName = "Lux_.+_E_tar_aoe_",
                     DontCross = true,
-                    CanBeRemoved = true,
                     DisabledByDefault = false,
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
@@ -2643,6 +2665,26 @@ namespace Evade
                     CollisionObjects =
                         new[]
                         {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall},
+                });
+
+            Spells.Add(
+                new SpellData
+                {
+                    ChampionName = "Morgana",
+                    SpellName = "TormentedSoil",
+                    Slot = SpellSlot.W,
+                    Type = SkillShotType.SkillshotCircle,
+                    Delay = 50,
+                    Range = 1000,
+                    Radius = 275,
+                    MissileSpeed = int.MaxValue,
+                    FixedRange = false,
+                    AddHitbox = true,
+                    DangerValue = 2,
+                    IsDangerous = false,
+                    MissileSpellName = "",
+                    ExtraDuration = 5000,
+                    DontCross = true,
                 });
 
             #endregion Morgana
@@ -4462,8 +4504,27 @@ namespace Evade
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
                 });
+            
+            /*Spells.Add(
+                new SpellData
+                {
+                    ChampionName = "Zyra",
+                    SpellName = "ZyraR",
+                    Slot = SpellSlot.R,
+                    Type = SkillShotType.SkillshotCircle,
+                    Delay = 250,
+                    Range = 1150,
+                    Radius = 70,
+                    MissileSpeed = 1150,
+                    FixedRange = false,
+                    AddHitbox = true,
+                    DangerValue = 3,
+                    IsDangerous = true,
+                    MissileSpellName = "ZyraR",
+                    Canberemove = true,
+                });*/
 
-            Spells.Add(
+            /*Spells.Add(
                 new SpellData
                 {
                     ChampionName = "Zyra",
@@ -4481,7 +4542,7 @@ namespace Evade
                     MissileSpellName = "zyrapassivedeathmanager",
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
-                });
+                });*/
 
             #endregion Zyra
 
