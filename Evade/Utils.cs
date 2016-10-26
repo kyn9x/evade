@@ -48,7 +48,7 @@ namespace Evade
 
         public static void SendMovePacket(this Obj_AI_Base v, Vector2 point)
         {
-           Player.IssueOrder(GameObjectOrder.MoveTo, point.To3D(), false);
+            EloBuddy.Player.IssueOrder(GameObjectOrder.MoveTo, point.To3D(), false);
         }
 
         public static Obj_AI_Base Closest(List<Obj_AI_Base> targetList, Vector2 from)
@@ -68,6 +68,7 @@ namespace Evade
 
             return result;
         }
+
 
         public static bool LineSegmentsCross(Vector2 a, Vector2 b, Vector2 c, Vector2 d)
         {
@@ -93,6 +94,7 @@ namespace Evade
             return (r > 0 && r < 1) && (s > 0 && s < 1);
         }
 
+
         /// <summary>
         /// Returns when the unit will be able to move again
         /// </summary>
@@ -110,7 +112,7 @@ namespace Evade
                 }
             }
 
-            return (result == 0f) ? -1 : (int) (Utils.TickCount + (result - Game.Time) * 1000);
+            return (result == 0f) ? -1 : (int)(Utils.TickCount + (result - Game.Time) * 1000);
         }
 
 

@@ -1,4 +1,4 @@
-// Copyright 2014 - 2014 Esk0r
+﻿// Copyright 2014 - 2014 Esk0r
 // Config.cs is part of Evade.
 // 
 // Evade is free software: you can redistribute it and/or modify
@@ -61,6 +61,9 @@ namespace Evade
             Menu = MainMenu.AddMenu("Evade#", "evade");
             Menu.Add("Enabled", new KeyBind("Enabled", true, KeyBind.BindTypes.PressToggle));
             Menu.Add("OnlyDangerous", new KeyBind("Dodge only dangerous", false, KeyBind.BindTypes.HoldActive)); //
+            Menu.AddSeparator(50);
+
+            Menu.AddLabel("Nên để Delay between movements in milliseconds >= 240 để né tốt nhất"); 
 
             if (Menu == null)
             {
@@ -161,14 +164,14 @@ namespace Evade
             drawings.Add("DisabledDraw", new CheckBox("Draw Disabled"));
             DisabledColor = Color.Red;
 
-            drawings.AddLabel("Missile Draw Color= White");
+            drawings.AddLabel("Missile Draw Color= Lime");
             drawings.Add("MissileDraw", new CheckBox("Draw Missile"));
-            MissileColor = Color.White;
+            MissileColor = Color.Lime;
 
             //drawings.AddItem(new MenuItem("EnabledColor", "Enabled spell color").SetValue(Color.White));
             //drawings.AddItem(new MenuItem("DisabledColor", "Disabled spell color").SetValue(Color.Red));
             //drawings.AddItem(new MenuItem("MissileColor", "Missile color").SetValue(Color.LimeGreen));
-            drawings.Add("Border", new Slider("Border Width", 1, 5, 1));
+            drawings.Add("Border", new Slider("Border Width", 2, 5, 2));
 
             drawings.Add("EnableDrawings", new CheckBox("Enabled"));
             drawings.Add("ShowEvadeStatus", new CheckBox("Draw Evade Status"));

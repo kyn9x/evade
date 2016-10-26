@@ -9,7 +9,7 @@ namespace Evade
 {
     public static class SpellBlocker
     {
-        public static List<SpellSlot> Whitelisted_SpellSlots; 
+        public static List<SpellSlot> Whitelisted_SpellSlots;
 
         static SpellBlocker()
         {
@@ -36,7 +36,7 @@ namespace Evade
                     break;
 
                 case "anivia":
-                    Whitelisted_SpellSlots = new List<SpellSlot> { SpellSlot.Q, SpellSlot.W};
+                    Whitelisted_SpellSlots = new List<SpellSlot> { SpellSlot.Q, SpellSlot.W };
                     break;
 
                 case "annie":
@@ -523,7 +523,7 @@ namespace Evade
                     Whitelisted_SpellSlots = new List<SpellSlot> { SpellSlot.Q, SpellSlot.W, SpellSlot.E, SpellSlot.R };
                     break;
             }
-            
+
         }
 
         public static bool ShouldBlock(SpellSlot spellToCast)
@@ -541,7 +541,7 @@ namespace Evade
             if (spellToCast == SpellSlot.Q || spellToCast == SpellSlot.W || spellToCast == SpellSlot.E ||
                 spellToCast == SpellSlot.R)
             {
-                return true;  
+                return true;
             }
 
             return false;

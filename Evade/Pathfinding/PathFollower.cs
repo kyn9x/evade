@@ -15,15 +15,12 @@ namespace Evade.Pathfinding
     {
         public static List<Vector2> Path = new List<Vector2>();
 
-        public static bool IsFollowing
+        static PathFollower()
         {
-            get
-            {
-                return Path.Count > 0;
-            }
+            Game.OnUpdate += Game_OnUpdate;
         }
 
-        public static void KeepFollowingPath(EventArgs args)
+        static void Game_OnUpdate(EventArgs args)
         {
             if (Path.Count > 0)
             {
@@ -42,6 +39,7 @@ namespace Evade.Pathfinding
         public static void Follow(List<Vector2> path)
         {
             Path = path;
+            Game_OnUpdate(new EventArgs());
         }
 
         public static void Stop()
