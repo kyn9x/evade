@@ -2566,7 +2566,7 @@ namespace Evade
                     Slot = SpellSlot.Q,
                     Type = SkillShotType.SkillshotMissileLine,
                     Delay = 250,
-                    Range = 1300,
+                    Range = 1175,
                     Radius = 70,
                     MissileSpeed = 1200,
                     FixedRange = true,
@@ -2611,14 +2611,14 @@ namespace Evade
                     Slot = SpellSlot.R,
                     Type = SkillShotType.SkillshotLine,
                     Delay = 1000,
-                    Range = 3500,
-                    Radius = 190,
+                    Range = 3340,
+                    Radius = 110,
                     MissileSpeed = int.MaxValue,
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 5,
                     IsDangerous = true,
-                    MissileSpellName = "LuxMaliceCannon",
+                    MissileSpellName = "LuxRVfxMis",
                 });
 
             #endregion Lux
