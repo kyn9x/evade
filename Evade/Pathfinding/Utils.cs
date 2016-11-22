@@ -31,7 +31,6 @@ namespace Evade.Pathfinding
                 return false;
             }
 
-
             //TODO Disable if the distance to the start position is high
             if (checkWalls)
             {

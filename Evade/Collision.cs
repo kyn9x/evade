@@ -58,9 +58,8 @@ namespace Evade
 
         public static void Init()
         {
-            Obj_AI_Base.OnProcessSpellCast += Obj_AI_Hero_OnProcessSpellCast;
+            Obj_AI_Base.OnSpellCast += Obj_AI_Hero_OnProcessSpellCast;
         }
-
 
         private static void Obj_AI_Hero_OnProcessSpellCast(Obj_AI_Base sender, GameObjectProcessSpellCastEventArgs args)
         {
@@ -187,7 +186,7 @@ namespace Evade
                             !ObjectManager.Get<AIHeroClient>()
                                 .Any(
                                     hero =>
-                                        hero.IsValidTarget(float.MaxValue) &&
+                                        hero.IsValidTarget(float.MaxValue, false) &&
                                         hero.Team == ObjectManager.Player.Team && hero.ChampionName == "Yasuo"))
                         {
                             break;

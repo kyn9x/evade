@@ -442,7 +442,7 @@ namespace Evade
 
             #endregion
 
-            #region Blatzcrank
+            #region Blitzcrank
 
             Spells.Add(
                 new SpellData
@@ -452,9 +452,9 @@ namespace Evade
                     Slot = SpellSlot.Q,
                     Type = SkillShotType.SkillshotMissileLine,
                     Delay = 250,
-                    Range = 925,
+                    Range = 1050,
                     Radius = 70,
-                    MissileSpeed = 1750,
+                    MissileSpeed = 1800,
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 4,
@@ -464,7 +464,7 @@ namespace Evade
                     CanBeRemoved = true,
                     CollisionObjects =
                         new[]
-                        {CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall}
+                        { CollisionObjectTypes.Champions, CollisionObjectTypes.Minion, CollisionObjectTypes.YasuoWall }
                 });
 
             Spells.Add(
@@ -1159,6 +1159,24 @@ namespace Evade
                     EarlyEvade = new[] { EarlyObjects.Allies },
                     CollisionObjects = new[] { CollisionObjectTypes.Champions, CollisionObjectTypes.YasuoWall },
                     CanBeRemoved = true,
+                });
+            
+            Spells.Add(
+                new SpellData
+                {
+                    ChampionName = "Fizz",
+                    SpellName = "FizzJump",
+                    Slot = SpellSlot.E,
+                    Type = SkillShotType.SkillshotCircle,
+                    Delay = 560,
+                    Range = 400,
+                    Radius = 360,
+                    MissileSpeed = int.MaxValue,
+                    FixedRange = false,
+                    AddHitbox = true,
+                    DangerValue = 3,
+                    IsDangerous = true,
+                    MissileSpellName = "FizzJumpBuffer",
                 });
 
             #endregion Fizz
@@ -2331,7 +2349,7 @@ namespace Evade
                     Delay = 250,
                     Range = 1100,
                     Radius = 65,
-                    MissileSpeed = 1800,
+                    MissileSpeed = 1750,
                     FixedRange = true,
                     AddHitbox = true,
                     DangerValue = 3,
@@ -2363,7 +2381,7 @@ namespace Evade
                     AddHitbox = true,
                     DangerValue = 3,
                     IsDangerous = true,
-                    TakeClosestPath = false,
+                    TakeClosestPath = true,
                     MissileSpellName = "LeonaZenithBladeMissile",
                     EarlyEvade = new[] { EarlyObjects.Allies },
                     CollisionObjects = new[] { CollisionObjectTypes.YasuoWall },
@@ -2507,8 +2525,8 @@ namespace Evade
                     MissileSpellName = "lucianrmissileoffhand",
                     ExtraMissileNames = new[] { "lucianrmissile" },
                     EarlyEvade = new[] { EarlyObjects.Allies, EarlyObjects.Minions, EarlyObjects.AllyObjects },
-                    DontCheckForDuplicates = true,
-                    DisabledByDefault = true,
+                    DontCheckForDuplicates = false,
+                    DisabledByDefault = false,
                 });
 
             #endregion Lucian
@@ -2678,7 +2696,7 @@ namespace Evade
                     Slot = SpellSlot.Q,
                     Type = SkillShotType.SkillshotMissileLine,
                     Delay = 250,
-                    Range = 1170,
+                    Range = 1300,
                     Radius = 80,
                     MissileSpeed = 1200,
                     FixedRange = true,

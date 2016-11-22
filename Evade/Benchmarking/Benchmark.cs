@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,7 +24,7 @@ namespace Evade.Benchmarking
         {
             SkillshotDetector.TriggerOnDetectSkillshot(
                 DetectionType.ProcessSpell, SpellDatabase.GetByName("TestLineSkillShot"), Utils.TickCount,
-                start, end, ObjectManager.Player);
+                start, end, end, ObjectManager.Player);
 
             Core.DelayAction(() => SpawnLineSkillShot(start, end), 5000);
         }
@@ -33,7 +33,7 @@ namespace Evade.Benchmarking
         {
             SkillshotDetector.TriggerOnDetectSkillshot(
                 DetectionType.ProcessSpell, SpellDatabase.GetByName("TestCircleSkillShot"), Utils.TickCount,
-                start, end, ObjectManager.Player);
+                start, end, end, ObjectManager.Player);
 
             Core.DelayAction(() => SpawnCircleSkillShot(start, end), 5000);
         }

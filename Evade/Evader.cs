@@ -164,6 +164,9 @@ namespace Evade
         /// <summary>
         /// Returns the safe targets to cast escape spells.
         /// </summary>
+        /// <summary>
+        /// Returns the safe targets to cast escape spells.
+        /// </summary>
         public static List<Obj_AI_Base> GetEvadeTargets(SpellValidTargets[] validTargets,
             int speed,
             int delay,
@@ -270,7 +273,7 @@ namespace Evade
                         }
 
                         if (Utils.TickCount - Program.LastWardJumpAttempt < 250 ||
-                           Program.IsSafePath(pathToTarget, Config.EvadingSecondTimeOffset, speed, delay).IsSafe)
+                            Program.IsSafePath(pathToTarget, Config.EvadingSecondTimeOffset, speed, delay).IsSafe)
                         {
                             badTargets.Add(target);
                         }

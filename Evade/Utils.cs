@@ -69,7 +69,6 @@ namespace Evade
             return result;
         }
 
-
         public static bool LineSegmentsCross(Vector2 a, Vector2 b, Vector2 c, Vector2 d)
         {
             var denominator = ((b.X - a.X) * (d.Y - c.Y)) - ((b.Y - a.Y) * (d.X - c.X));
@@ -93,7 +92,6 @@ namespace Evade
 
             return (r > 0 && r < 1) && (s > 0 && s < 1);
         }
-
 
         /// <summary>
         /// Returns when the unit will be able to move again
